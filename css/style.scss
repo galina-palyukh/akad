@@ -1,0 +1,146 @@
+@import "variables";
+@import "mixins";
+
+
+body {
+  font-family: $default-font-family;
+  font-size: $default-font-size;
+  color: $default-color;
+}
+
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+ul, ol {
+  list-style: none;
+  padding-left: 0;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-transform: $base-heading-text-transform;
+  font-weight: $base-heading-font-weight
+}
+
+
+h1, .h1 {
+  font-size: $base-h1-font-size;
+  line-height: $base-h1-line-height;
+}
+
+h2, .h2 {
+  font-size: $base-h2-font-size;
+  line-height: $base-h2-line-height;
+}
+
+h3, .h3 {
+  font-size: $base-h3-font-size;
+  line-height: $base-h3-line-height;
+}
+
+h4, .h4 {
+  font-size: $base-h4-font-size;
+  line-height: $base-h4-line-height;
+}
+
+h5, .h5 {
+  font-size: $base-h5-font-size;
+  line-height: $base-h5-line-height;
+}
+
+h6, .h6 {
+  font-size: $base-h6-font-size;
+  line-height: $base-h6-line-height;
+}
+
+
+.background {
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.overlay,
+.background,
+.parallax {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.foreground {
+  position: relative;
+}
+
+.section-title {
+  max-width: 740px;
+  margin-bottom: 80px;
+}
+
+section {
+  &:not(:last-child) {
+    margin-bottom: 125px;
+  }
+
+}
+
+.navbar {
+  background-color: red;
+}
+
+.hero {
+  padding: 200px 0;
+  background-image: url("../images/hero_bg.jpg");
+
+  @include min-screen(992px) {
+    min-height: 850px;
+  }
+
+  .overlay {
+    background-color: rgba(255, 255, 255, 0.85);
+  }
+
+  .hero-title {
+    max-width: 565px;
+  }
+
+}
+
+.services {
+
+  .services-item {
+    span[class^="icon-ios"] {
+      font-size: 34px;
+    }
+  }
+
+  .services-list {
+
+    li {
+      text-transform: uppercase;
+      color: $default-grey-color;
+
+      &:not(:last-child) {
+        margin-bottom: 0.5rem;
+      }
+    }
+  }
+}
+
+@include min-screen(992px) {
+  .history {
+    margin-top: -425px;
+  }
+
+}
+
