@@ -6,22 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!---->
 
+
+    <title>AKAD</title>
+
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700" rel="stylesheet">
+
+    <link rel="stylesheet" href="fonts/Roboto/fonts.css">
     <!---->
 
 
     <!-- Icons -->
     <!--<link href="https://unpkg.com/ionicons@4.5.5/dist/css/ionicons.min.css" rel="stylesheet">-->
     <link rel="stylesheet" href="icons/ionicons/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+          integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <!---->
+
+    <!-- Scrollbar CSS -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
     <!---->
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
           integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <!---->
-
-    <title>AKAD</title>
 
 
     <!-- Main CSS -->
@@ -32,177 +42,405 @@
 
 
 <main>
-    <section class="hero background position-relative">
-        <div class="overlay"></div>
-        <div class="foreground">
+    <div class="wrapper">
 
-            <!--NAVBAR-->
-            <nav class="navbar  navbar-dark fixed-top">
+        <!--HERO-->
+        <section class="hero background position-relative">
+            <div class="overlay"></div>
+            <div class="foreground mb-5">
 
+                <!-- NAV-SIDEBAR -->
+                <nav class="nav-sidebar">
 
-                <a class="navbar-brand" href="#">AKAD.</a>
+                    <div class="sidebar-header d-flex  justify-content-end">
+                        <a class="btn sidebarNavClose border-0 d-flex flex-column justify-content-center  align-items-center  mr-2">
+                            <span></span>
+                        </a>
+                    </div>
 
+                    <ul class="nav-list  list-unstyled">
 
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+                        <li class="active">
+                            <a href="#aboutSubmenu" data-toggle="collapse" aria-expanded="false">About</a>
 
-                <!-- Navbar links -->
-                <div class="collapse navbar-collapse" id="collapsibleNavbar">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Link</a>
+                            <ul class="collapse submenu" id="aboutSubmenu">
+                                <li>
+                                    <a href="#">About 1</a>
+                                </li>
+                                <li>
+                                    <a href="#">About 2</a>
+                                </li>
+                                <li>
+                                    <a href="#">About 3</a>
+                                </li>
+                            </ul>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Link</a>
+
+                        <li>
+                            <a href="#servicesSubmenu" data-toggle="collapse" aria-expanded="false">Services</a>
+
+                            <ul class="collapse submenu" id="servicesSubmenu">
+                                <li>
+                                    <a href="#">About 1</a>
+                                </li>
+                                <li>
+                                    <a href="#">About 2</a>
+                                </li>
+                                <li>
+                                    <a href="#">About 3</a>
+                                </li>
+                            </ul>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Link</a>
+
+                        <li>
+                            <a href="#">Portfolio</a>
                         </li>
+
+                        <li>
+                            <a href="#">Blog</a>
+                        </li>
+
+                        <li>
+                            <a href="#">Contacts</a>
+                        </li>
+
                     </ul>
-                </div>
-            </nav>
-            <!--NAVBAR END-->
+                </nav>
 
+                <!--NAVBAR-->
+                <header class="navbar fixed-top pl-0 pr-0 pt-2 pb-2">
+                    <div class="container">
+                        <div class="col-xs-6">
+                            <a class="navbar-brand" href="#">AKAD.</a>
+                        </div>
+
+                        <div class="col-xs-6">
+
+                            <a href="#"
+                               class="border-0 btn sidebarNavCollapse border-0 d-flex flex-column justify-content-between">
+                                <span></span>
+                            </a>
+
+                        </div>
+                    </div>
+                </header>
+                <!--NAVBAR END-->
+
+
+                <div class="container">
+                    <div class="hero-title mx-auto text-center">
+                        <span class="sup-heading text-uppercase py-2 px-3">we're</span>
+                        <h1 class="px-1 py-2 px-sm-2 py-sm-3  px-md-3 py-md-4 mb-4">creative agency</h1>
+                        <p class="small-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor
+                            incididunt ut
+                            labore
+                            et dolore magna aliqua.</p>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--HERO END-->
+
+        <!--HISTORY-->
+        <section class="history  ">
             <div class="container">
-                <div class="hero-title mx-auto text-center">
-                    <span class="sup-heading">we are</span>
-                    <h1>creative agency</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-                        labore
-                        et dolore magna aliqua.</p>
-
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="history">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 mb-5 mb-md-0 d-flex justify-content-center justify-content-md-start align-items-start">
-                    <img src="images/history.jpg" alt="history-image">
-                </div>
-                <div class="col-md-6">
-                    <h2>HISTORY OF AGENCY</h2>
-                    <p>Porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed
-                        quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat
-                        voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit
-                        laboriosam, nisi ut aliquid ex ea commodi modi tempora incidunt ut labore.</p>
-                    <div class="d-flex justify-content-end">
-                        <a href="" class="btn btn-primary">read more</a>
+                <div class="row ">
+                    <div class=" col-lg-6 mb-5 mb-lg-0 d-flex justify-content-center justify-content-lg-start align-items-start container-img-small">
+                        <img class="img-fluid" src="images/history.jpg" alt="history-image">
+                    </div>
+                    <div class=" col-lg-6 mt-lg-4 text-center text-lg-left">
+                        <h2 class="heading-decor"> HISTORY OF AGENCY</h2>
+                        <p class="mb-4">Porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci
+                            velit,
+                            sed
+                            quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat
+                            voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis
+                            suscipit
+                            laboriosam, nisi ut aliquid ex ea commodi modi tempora incidunt ut labore.</p>
+                        <div class="d-flex justify-content-center justify-content-lg-end">
+                            <a href="" class="btn button-primary">read more</a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+        <!--HISTORY END-->
 
+        <!--SERVICES-->
+        <section class="services">
+            <div class="container">
 
-    <section class="services">
-        <div class="container">
+                <div class="section-title mx-auto text-center">
+                    <h2 class="heading-decor">why choose </h2>
+                    <p class="small-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut
+                        labore et dolore magna aliqua.</p>
 
-            <div class="section-title mx-auto text-center">
-                <h2>why choose </h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-                    labore et dolore magna aliqua.</p>
+                </div>
+                <div class="row flex-column-reverse flex-lg-row">
+                    <div class=" col-lg-6 d-flex justify-content-center justify-content-lg-start">
 
-            </div>
-            <div class="row flex-column-reverse flex-md-row">
-                <div class="col-md-6">
+                        <div class="row">
+                            <div class="col-sm-6 services-item mb-4 text-center text-lg-left ">
+                                <span class="icon-ios-infinite d-block mb-2 "></span>
+                                <h5>unlimited options</h5>
+                                <ul class="services-list mt-3 mb-3 text-uppercase list-unstyled">
+                                    <li>Branding</li>
+                                    <li>Design & Copywriting</li>
+                                    <li>Concept development</li>
+                                    <li>User Experience</li>
+                                </ul>
+                            </div>
 
-                    <div class="row">
-                        <div class="col-sm-6 services-item mb-4">
-                            <span class="icon-ios-infinite d-block mb-3 "></span>
-                            <h5>unlimited options</h5>
-                            <ul class="services-list mt-3 mb-3">
-                                <li>Branding</li>
-                                <li>Design & Copywriting</li>
-                                <li>Concept development</li>
-                                <li>User Experience</li>
-                            </ul>
+                            <div class="col-sm-6 services-item mb-4 text-center text-lg-left ">
+                                <span class="icon-ios-shuffle d-block mb-2"></span>
+                                <h5>DESIGN & DEVELOPMENT</h5>
+                                <ul class="services-list mt-3 mb-3 text-uppercase  list-unstyled">
+                                    <li>Information architecture</li>
+                                    <li> Interface design</li>
+                                    <li>Product Design</li>
+                                    <li>Integrated ad Companies</li>
+                                </ul>
+                            </div>
 
+                            <div class="col-sm-6 services-item mb-4 text-center text-lg-left ">
+                                <span class="icon-ios-cart d-block mb-2"></span>
+                                <h5>e-commerce</h5>
+
+                                <ul class="services-list mt-3 mb-3 text-uppercase  list-unstyled">
+                                    <li>Prototyping</li>
+                                    <li>Technical Consulting</li>
+                                    <li>Web applications</li>
+                                    <li>Quality testing</li>
+                                </ul>
+                            </div>
+
+                            <div class="col-sm-6 services-item text-center text-lg-left ">
+                                <span class="icon-ios-options d-block mb-2"></span>
+                                <h5>CUSTOMIZABLE DESIGN</h5>
+                                <ul class="services-list mt-3 mb-3  text-uppercase  list-unstyled">
+                                    <li>Information architecture</li>
+                                    <li> Interface design</li>
+                                    <li>Product Design</li>
+                                    <li>Integrated ad Companies</li>
+                                </ul>
+                            </div>
                         </div>
-                        <div class="col-sm-6 services-item mb-4">
-                            <span class="icon-ios-shuffle d-block mb-3"></span>
-                            <h5>DESIGN & DEVELOPMENT</h5>
-                            <ul class="services-list mt-3 mb-3">
-                                <li>Information architecture</li>
-                                <li> Interface design</li>
-                                <li>Product Design</li>
-                                <li>Integrated ad Companies</li>
-                            </ul>
-                        </div>
-                        <div class="col-sm-6 services-item mb-4">
-                            <span class="icon-ios-cart d-block mb-3 "></span>
-                            <h5>e-commerce</h5>
 
-                            <ul class="services-list mt-3 mb-3">
-                                <li>Prototyping</li>
-                                <li>Technical Consulting</li>
-                                <li>Web applications</li>
-                                <li>Quality testing</li>
-                            </ul>
-                        </div>
-                        <div class="col-sm-6 services-item mb-4">
-                            <span class="icon-ios-options d-block mb-3 "></span>
-                            <h5>CUSTOMIZABLE DESIGN</h5>
-                            <ul class="services-list mt-3 mb-3">
-                                <li>Information architecture</li>
-                                <li> Interface design</li>
-                                <li>Product Design</li>
-                                <li>Integrated ad Companies</li>
-                            </ul>
-                        </div>
+                    </div>
+
+                    <div class="col-lg-6  mb-5 mb-lg-0 d-flex justify-content-center justify-content-lg-end  align-items-start align-items-md-center container-img-small">
+                        <img class="img-fluid " src="images/about.jpg" alt="about-image">
                     </div>
 
                 </div>
-
-                <div class="col-md-6  mb-5 mb-md-0 d-flex justify-content-center justify-content-md-end  align-items-start align-items-md-center">
-                    <img src="images/about.jpg" alt="about-image">
-                </div>
-
             </div>
-        </div>
-    </section>
+        </section>
+        <!--SERVICES END-->
 
 
-    <section>
-        <div class="container">
+        <!--PORTFOLIO-->
+        <section class="portfolio">
+            <div class="container">
 
-            <div class="section-title mx-auto text-center">
-                <h2>our portfolio</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-                    labore et dolore magna aliqua.</p>
+                <div class="section-title mx-auto text-center">
+                    <h2 class="heading-decor">our portfolio</h2>
+                    <p class="small-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut
+                        labore et dolore magna aliqua.</p>
 
+                </div>
                 <div class="row">
-                    <div class="col-sm-3">
+                    <div class="col-lg-3 text-center text-lg-left mb-5 mb-lg-0 ">
+                        <h3 class="mb-4">choose cate&shy;gory</h3>
+
+                        <ul class=" filter-list text-uppercase  list-unstyled">
+                            <li><a href="#" class="is-checked" data-filter="*"> All</a></li>
+                            <li><a href="#" data-filter=".webdesign">webdesign</a></li>
+                            <li><a href="#" data-filter=".graphic">graphic </a></li>
+                            <li><a href="#" data-filter=".fashion">fashion</a></li>
+                            <li><a href="#" data-filter=".logo-design">logo design</a></li>
+                            <li><a href="#" data-filter=".advertising">advertising</a></li>
+                        </ul>
 
                     </div>
 
-                    <div class="col-sm-9">
+                    <div class="col-lg-9">
+                        <div class="portfolio-masonry filter-container">
+                            <a href="#" class="item logo design fashion position-relative">
+                                <div class="overlay p-3 position-absolute d-flex justify-content-center align-items-center">
+                                    <span class="icon-ios-add"></span>
+                                </div>
+                                <img class="img-fluid" src="images/portfolio/portfolio1.jpg" alt="portfolio-img">
+                            </a>
 
+                            <a href="#" class="item logo-design graphic webdesign fashion position-relative">
+                                <div class="overlay p-3 position-absolute d-flex justify-content-center align-items-center">
+                                    <span class="icon-ios-add"></span>
+                                </div>
+                                <img class="img-fluid" src="images/portfolio/portfolio2.jpg" alt="portfolio-img">
+                            </a>
+
+                            <a href="#" class="item webdesign graphic fashion position-relative">
+                                <div class="overlay p-3 position-absolute d-flex justify-content-center align-items-center">
+                                    <span class="icon-ios-add"></span>
+                                </div>
+                                <img class="img-fluid" src="images/portfolio/portfolio3.jpg" alt="portfolio-img">
+                            </a>
+
+                            <a href="#" class="item webdesign advertising graphic position-relative">
+                                <div class="overlay p-3 position-absolute d-flex justify-content-center align-items-center">
+                                    <span class="icon-ios-add"></span>
+                                </div>
+                                <img class="img-fluid" src="images/portfolio/portfolio4.jpg" alt="portfolio-img">
+                            </a>
+
+                            <a href="#" class="item logo webdesign design advertising position-relative">
+                                <div class="overlay p-3 position-absolute d-flex justify-content-center align-items-center">
+                                    <span class="icon-ios-add"></span>
+                                </div>
+                                <img class="img-fluid" src="images/portfolio/portfolio5.jpg" alt="portfolio-img">
+                            </a>
+
+                            <a href="#" class="item webdesign advertising position-relative">
+                                <div class="overlay p-3 position-absolute d-flex justify-content-center align-items-center">
+                                    <span class="icon-ios-add"></span>
+                                </div>
+                                <img class="img-fluid" src="images/portfolio/portfolio6.jpg" alt="portfolio-img">
+                            </a>
+
+                            <a href="#" class="item logo-design position-relative">
+                                <div class="overlay p-3 position-absolute d-flex justify-content-center align-items-center">
+                                    <span class="icon-ios-add"></span>
+                                </div>
+                                <img class="img-fluid" src="images/portfolio/portfolio7.jpg" alt="portfolio-img">
+                            </a>
+
+                            <a href="#" class="item graphic position-relative">
+                                <div class="overlay p-3 position-absolute d-flex justify-content-center align-items-center">
+                                    <span class="icon-ios-add"></span>
+                                </div>
+                                <img class="img-fluid" src="images/portfolio/portfolio8.jpg" alt="portfolio-img">
+                            </a>
+
+                            <a href="#" class="item webdesign graphic position-relative">
+                                <div class="overlay p-3 position-absolute d-flex justify-content-center align-items-center">
+                                    <span class="icon-ios-add"></span>
+                                </div>
+                                <img class="img-fluid" src="images/portfolio/portfolio9.jpg" alt="portfolio-img">
+                            </a>
+                        </div>
                     </div>
                 </div>
-
             </div>
-        </div>
-    </section>
+        </section>
+        <!--PORTFOLIO END-->
+
+
+        <!--NEWSLETTER-->
+        <section class="newsletter py-5">
+            <div class="container">
+                <div class="row">
+
+
+                    <div class="col-lg-6 text-center text-lg-left mb-5 mb-lg-0">
+                        <h3 class="inverse-color mb-3">YOU THINK WE'RE COOL ? LET'S WORK TOGETHER</h3>
+
+                        <div class="">
+                            <a href="" class="btn button-secondary">get in touch</a>
+                        </div>
+
+                    </div>
+
+                    <div class="col-lg-6">
+                        <form action="" class="py-3 px-3">
+
+                            <h4>STAY INFORMED WITH OUR NEWSLET&shy;TER</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua.</p>
+                            <div class="input-group mb-3">
+                                <input type="email" class="form-control rounded-0" id="email" placeholder="YOUR EMAIL"
+                                       required>
+                                <div class="input-group-append">
+                                    <button class="btn button-primary" type="submit">send</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <!--NEWSLETTER END-->
+
+        <footer class="py-5">
+            <div class="container">
+                <div class="row justify-content-md-between">
+                    <div class="col-12 col-xl-7">
+                        <nav class="footer-nav d-flex justify-content-center justify-content-xl-start mb-4 mb-xl-0">
+                            <ul class="list-unstyled d-flex  nav-footer mb-xl-0 flex-column flex-xl-row text-center text-xl-left text-uppercase">
+                                <li><a href="#">home</a></li>
+                                <li><a href="#">about us</a></li>
+                                <li><a href="#">services</a></li>
+                                <li><a href="#">portfolio</a></li>
+                                <li><a href="#">blog</a></li>
+                                <li><a href="#">contact us</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="col-12 col-xl-5 text-uppercase copyright text-center text-xl-right">
+                        Created by akhouad 2016. All Rights Reserved
+                    </div>
+
+
+                    <div class="col d-flex justify-content-center justify-content-xl-end">
+                        <div class=" social-list pt-2 pt-xl-3">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-pinterest"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </div>
 </main>
+
+<!-- NAV-OVERLAY -->
+<div class="nav-overlay"></div>
+<!-- NAV-OVERLAY END-->
 
 
 <!-- jQuery -->
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<!--<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"> </script>-->
 <!---->
 
 <!-- Bootstrap JS -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
         crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+<!---->
+
+<!-- Scrollbar JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+<!---->
+
+<!-- Isotope JS -->
+<!--<script src="https://unpkg.com/isotope-layout@3.0.6/dist/isotope.pkgd.min.js"> </script>-->
+<!---->
+
+<!-- Main JS -->
+<script src="js/app.js"></script>
 <!---->
 
 </body>
