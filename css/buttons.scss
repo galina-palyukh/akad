@@ -1,0 +1,126 @@
+
+.btn {
+  &:focus,
+  &:hover,
+  &:active {
+    outline: none;
+    box-shadow: none;
+  }
+}
+
+
+.button-primary,
+.button-secondary {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  transition: 0.6s;
+  transition-delay: 0.2s;
+  padding: 14px 30px;
+  border: none;
+  font-size: $small-font-size;
+  border-radius: 0;
+  font-weight: 600;
+  text-transform: uppercase;
+
+  @include max-screen(768px) {
+    padding: 12px 25px;
+  }
+
+  &::before,
+  &::after {
+    position: absolute;
+    top: 50%;
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-color: $default-color;
+    border-radius: 50%;
+    transition: 0.5s;
+    z-index: -1;
+  }
+
+  &::before {
+    left: -20px;
+    transform: translate(-50%, -50%);
+  }
+
+  &::after {
+    right: -20px;
+    transform: translate(50%, -50%);
+  }
+
+
+  &:hover {
+    background-color: $default-color;
+    color: $default-light-color;
+
+    &::before {
+      animation: criss-cross-left 0.6s;
+    }
+
+    &::after {
+      right: -20px;
+      animation: criss-cross-right 0.6s;
+    }
+
+  }
+}
+
+
+@-webkit-keyframes criss-cross-right {
+  0% {
+    right: -20px;
+  }
+  50% {
+    right: 50%;
+    width: 20px;
+    height: 20px;
+  }
+  100% {
+    right: 50%;
+    width: 375px;
+    height: 375px;
+  }
+}
+
+
+@-webkit-keyframes criss-cross-left {
+  0% {
+    left: -20px;
+  }
+  50% {
+    left: 50%;
+    width: 20px;
+    height: 20px;
+  }
+  100% {
+    left: 50%;
+    width: 375px;
+    height: 375px;
+  }
+}
+
+
+.button-primary {
+  background-color: $default-primary-color;
+  color: $default-light-color;
+
+  &:focus,
+  &:active {
+    background-color: $default-primary-color;
+    color: $default-light-color;
+  }
+
+}
+
+.button-secondary {
+  color: $default-primary-color;
+  background-color: $default-light-color;
+
+  &:focus,
+  &:active {
+    color: $default-primary-color;
+    background-color: $default-light-color;
+  }
+}

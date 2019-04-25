@@ -1,0 +1,20 @@
+.services {
+
+  .services-item {
+    span[class^="icon-ios"] {
+      font-size: 34px;
+    }
+  }
+
+  .services-list {
+    li {
+      color: $default-grey-color;
+      line-height: 1.4;
+      font-size: 14px;
+
+      &:not(:last-child) {
+        margin-bottom: 0.5rem;
+      }
+    }
+  }
+}

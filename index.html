@@ -28,6 +28,14 @@
           href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
     <!---->
 
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="css/animate.css">
+    <!---->
+
+    <!-- Fancybox -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"/>
+    <!---->
+
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
           integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -37,6 +45,7 @@
     <!-- Main CSS -->
     <link rel="stylesheet" href="css/style.css">
     <!---->
+
 </head>
 <body>
 
@@ -128,7 +137,7 @@
 
 
                 <div class="container">
-                    <div class="hero-title mx-auto text-center">
+                    <div class="hero-title mx-auto text-center bounceInDown wow">
                         <span class="sup-heading text-uppercase py-2 px-3">we're</span>
                         <h1 class="px-1 py-2 px-sm-2 py-sm-3  px-md-3 py-md-4 mb-4">creative agency</h1>
                         <p class="small-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -143,23 +152,27 @@
         </section>
         <!--HERO END-->
 
+
         <!--HISTORY-->
         <section class="history  ">
             <div class="container">
                 <div class="row ">
-                    <div class=" col-lg-6 mb-5 mb-lg-0 d-flex justify-content-center justify-content-lg-start align-items-start container-img-small">
+                    <div class="wow bounceInLeft  col-lg-6 mb-5 mb-lg-0 d-flex justify-content-center justify-content-lg-start align-items-start container-img-small">
                         <img class="img-fluid" src="images/history.jpg" alt="history-image">
                     </div>
                     <div class=" col-lg-6 mt-lg-4 text-center text-lg-left">
-                        <h2 class="heading-decor"> HISTORY OF AGENCY</h2>
-                        <p class="mb-4">Porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci
+                        <h2 class="heading-decor  wow bounceInRight" data-wow-delay=".5s"> HISTORY OF AGENCY</h2>
+                        <p class="mb-4 wow bounceInRight"> Porro quisquam est, qui dolorem ipsum quia dolor sit amet,
+                            consectetur, adipisci
                             velit,
                             sed
                             quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat
                             voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis
                             suscipit
                             laboriosam, nisi ut aliquid ex ea commodi modi tempora incidunt ut labore.</p>
-                        <div class="d-flex justify-content-center justify-content-lg-end">
+
+                        <div class="wow bounceInUp d-flex justify-content-center justify-content-lg-end"
+                             data-wow-delay=".5s">
                             <a href="" class="btn button-primary">read more</a>
                         </div>
                     </div>
@@ -167,6 +180,7 @@
             </div>
         </section>
         <!--HISTORY END-->
+
 
         <!--SERVICES-->
         <section class="services">
@@ -183,7 +197,8 @@
                     <div class=" col-lg-6 d-flex justify-content-center justify-content-lg-start">
 
                         <div class="row">
-                            <div class="col-sm-6 services-item mb-4 text-center text-lg-left ">
+                            <div class="wow fadeInLeft  col-sm-6 services-item mb-4 text-center text-lg-left"
+                                 data-wow-duration=".5s">
                                 <span class="icon-ios-infinite d-block mb-2 "></span>
                                 <h5>unlimited options</h5>
                                 <ul class="services-list mt-3 mb-3 text-uppercase list-unstyled">
@@ -194,7 +209,8 @@
                                 </ul>
                             </div>
 
-                            <div class="col-sm-6 services-item mb-4 text-center text-lg-left ">
+                            <div class="wow fadeInLeft col-sm-6 services-item mb-4 text-center text-lg-left "
+                                 data-wow-duration=".5s" data-wow-delay="0.5s">
                                 <span class="icon-ios-shuffle d-block mb-2"></span>
                                 <h5>DESIGN & DEVELOPMENT</h5>
                                 <ul class="services-list mt-3 mb-3 text-uppercase  list-unstyled">
@@ -205,7 +221,8 @@
                                 </ul>
                             </div>
 
-                            <div class="col-sm-6 services-item mb-4 text-center text-lg-left ">
+                            <div class="wow fadeInLeft col-sm-6 services-item mb-4 text-center text-lg-left"
+                                 data-wow-duration=".5s">
                                 <span class="icon-ios-cart d-block mb-2"></span>
                                 <h5>e-commerce</h5>
 
@@ -217,7 +234,8 @@
                                 </ul>
                             </div>
 
-                            <div class="col-sm-6 services-item text-center text-lg-left ">
+                            <div class="wow fadeInLeft col-sm-6 services-item text-center text-lg-left "
+                                 data-wow-duration=".5s" data-wow-delay="0.5s">
                                 <span class="icon-ios-options d-block mb-2"></span>
                                 <h5>CUSTOMIZABLE DESIGN</h5>
                                 <ul class="services-list mt-3 mb-3  text-uppercase  list-unstyled">
@@ -231,7 +249,7 @@
 
                     </div>
 
-                    <div class="col-lg-6  mb-5 mb-lg-0 d-flex justify-content-center justify-content-lg-end  align-items-start align-items-md-center container-img-small">
+                    <div class="wow fadeInRight col-lg-6  mb-5 mb-lg-0 d-flex justify-content-center justify-content-lg-end  align-items-start align-items-md-center container-img-small">
                         <img class="img-fluid " src="images/about.jpg" alt="about-image">
                     </div>
 
@@ -264,73 +282,81 @@
                             <li><a href="#" data-filter=".logo-design">logo design</a></li>
                             <li><a href="#" data-filter=".advertising">advertising</a></li>
                         </ul>
-
                     </div>
 
                     <div class="col-lg-9">
-                        <div class="portfolio-masonry filter-container">
-                            <a href="#" class="item logo design fashion position-relative">
+                        <div class="portfolio-masonry filter-container ">
+                            <a data-fancybox="gallery" href="images/portfolio/portfolio-big1.jpg"
+                               class="wow flipInX item logo design fashion position-relative">
                                 <div class="overlay p-3 position-absolute d-flex justify-content-center align-items-center">
                                     <span class="icon-ios-add"></span>
                                 </div>
                                 <img class="img-fluid" src="images/portfolio/portfolio1.jpg" alt="portfolio-img">
                             </a>
 
-                            <a href="#" class="item logo-design graphic webdesign fashion position-relative">
+                            <a data-fancybox="gallery" href="images/portfolio/portfolio-big2.jpg"
+                               class="wow flipInX item logo-design graphic webdesign fashion position-relative">
                                 <div class="overlay p-3 position-absolute d-flex justify-content-center align-items-center">
                                     <span class="icon-ios-add"></span>
                                 </div>
                                 <img class="img-fluid" src="images/portfolio/portfolio2.jpg" alt="portfolio-img">
                             </a>
 
-                            <a href="#" class="item webdesign graphic fashion position-relative">
+                            <a data-fancybox="gallery" href="images/portfolio/portfolio-big3.jpg"
+                               class="wow flipInX item webdesign graphic fashion position-relative">
                                 <div class="overlay p-3 position-absolute d-flex justify-content-center align-items-center">
                                     <span class="icon-ios-add"></span>
                                 </div>
                                 <img class="img-fluid" src="images/portfolio/portfolio3.jpg" alt="portfolio-img">
                             </a>
 
-                            <a href="#" class="item webdesign advertising graphic position-relative">
+                            <a data-fancybox="gallery" href="images/portfolio/portfolio-big1.jpg"
+                               class="wow flipInX item webdesign advertising graphic position-relative">
                                 <div class="overlay p-3 position-absolute d-flex justify-content-center align-items-center">
                                     <span class="icon-ios-add"></span>
                                 </div>
                                 <img class="img-fluid" src="images/portfolio/portfolio4.jpg" alt="portfolio-img">
                             </a>
 
-                            <a href="#" class="item logo webdesign design advertising position-relative">
+                            <a data-fancybox="gallery" href="images/portfolio/portfolio-big2.jpg"
+                               class="wow flipInX item logo webdesign design advertising position-relative">
                                 <div class="overlay p-3 position-absolute d-flex justify-content-center align-items-center">
                                     <span class="icon-ios-add"></span>
                                 </div>
                                 <img class="img-fluid" src="images/portfolio/portfolio5.jpg" alt="portfolio-img">
                             </a>
 
-                            <a href="#" class="item webdesign advertising position-relative">
+                            <a data-fancybox="gallery" href="images/portfolio/portfolio-big3.jpg"
+                               class="wow flipInX item webdesign advertising position-relative">
                                 <div class="overlay p-3 position-absolute d-flex justify-content-center align-items-center">
                                     <span class="icon-ios-add"></span>
                                 </div>
                                 <img class="img-fluid" src="images/portfolio/portfolio6.jpg" alt="portfolio-img">
                             </a>
 
-                            <a href="#" class="item logo-design position-relative">
+                            <a data-fancybox="gallery" href="images/portfolio/portfolio-big1.jpg"
+                               class="wow flipInX item logo-design position-relative">
                                 <div class="overlay p-3 position-absolute d-flex justify-content-center align-items-center">
                                     <span class="icon-ios-add"></span>
                                 </div>
                                 <img class="img-fluid" src="images/portfolio/portfolio7.jpg" alt="portfolio-img">
                             </a>
 
-                            <a href="#" class="item graphic position-relative">
+                            <a data-fancybox="gallery" href="images/portfolio/portfolio-big2.jpg"
+                               class="wow flipInX item graphic position-relative">
                                 <div class="overlay p-3 position-absolute d-flex justify-content-center align-items-center">
                                     <span class="icon-ios-add"></span>
                                 </div>
                                 <img class="img-fluid" src="images/portfolio/portfolio8.jpg" alt="portfolio-img">
                             </a>
 
-                            <a href="#" class="item webdesign graphic position-relative">
-                                <div class="overlay p-3 position-absolute d-flex justify-content-center align-items-center">
-                                    <span class="icon-ios-add"></span>
-                                </div>
-                                <img class="img-fluid" src="images/portfolio/portfolio9.jpg" alt="portfolio-img">
-                            </a>
+                            <a data-fancybox="gallery" href="images/portfolio/portfolio-big3.jpg"
+                                class="wow flipInX item webdesign graphic position-relative">
+                            <div class="overlay p-3 position-absolute d-flex justify-content-center align-items-center">
+                                <span class="icon-ios-add"></span>
+                            </div>
+                            <img class="img-fluid" src="images/portfolio/portfolio9.jpg" alt="portfolio-img">
+                        </a>
                         </div>
                     </div>
                 </div>
@@ -339,13 +365,77 @@
         <!--PORTFOLIO END-->
 
 
+        <!--TRAINING FOR ANIMATE-->
+        <section class="test-animation py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="card py-3 px-3 wow fadeInRight " data-wow-duration=".6s" data-wow-delay=".5s">
+
+                            <h4>STAY INFORMED WITH OUR NEWSLET&shy;TER</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class=" card py-3 px-3  wow fadeInDown " data-wow-duration=".7s" data-wow-delay="0s">
+
+                            <h4>STAY INFORMED WITH OUR NEWSLET&shy;TER</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card py-3 px-3  wow fadeInLeft" data-wow-duration=".6s" data-wow-delay=".5s">
+
+                            <h4>STAY INFORMED WITH OUR NEWSLET&shy;TER</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="test-animation2 py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="card py-3 px-3 wow fadeInLeft " data-wow-duration=".4s" data-wow-delay=".5s">
+
+                            <h4>STAY INFORMED WITH OUR NEWSLET&shy;TER</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card py-3 px-3  wow fadeInLeft " data-wow-duration=".4s" data-wow-delay=".9s">
+
+                            <h4>STAY INFORMED WITH OUR NEWSLET&shy;TER</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card py-3 px-3  wow fadeInLeft" data-wow-duration=".4s" data-wow-delay="1.3s">
+
+                            <h4>STAY INFORMED WITH OUR NEWSLET&shy;TER</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--END TRAINING FOR ANIMATE-->
+
+
         <!--NEWSLETTER-->
         <section class="newsletter py-5">
             <div class="container">
                 <div class="row">
 
 
-                    <div class="col-lg-6 text-center text-lg-left mb-5 mb-lg-0">
+                    <div class="col-lg-6 text-center text-lg-left mb-5 mb-lg-0 wow fadeInLeft">
                         <h3 class="inverse-color mb-3">YOU THINK WE'RE COOL ? LET'S WORK TOGETHER</h3>
 
                         <div class="">
@@ -354,7 +444,7 @@
 
                     </div>
 
-                    <div class="col-lg-6">
+                    <div class="col-lg-6 wow fadeInDown">
                         <form action="" class="py-3 px-3">
 
                             <h4>STAY INFORMED WITH OUR NEWSLET&shy;TER</h4>
@@ -375,7 +465,9 @@
         </section>
         <!--NEWSLETTER END-->
 
-        <footer class="py-5">
+
+        <!--FOOTER-->
+        <footer class="py-5 wow fadeInUp">
             <div class="container">
                 <div class="row justify-content-md-between">
                     <div class="col-12 col-xl-7">
@@ -396,7 +488,7 @@
 
 
                     <div class="col d-flex justify-content-center justify-content-xl-end">
-                        <div class=" social-list pt-2 pt-xl-3">
+                        <div class=" social-list">
                             <a href="#"><i class="fab fa-facebook-f"></i></a>
                             <a href="#"><i class="fab fa-twitter"></i></a>
                             <a href="#"><i class="fab fa-youtube"></i></a>
@@ -408,6 +500,7 @@
                 </div>
             </div>
         </footer>
+        <!--FOOTER END-->
 
     </div>
 </main>
@@ -433,6 +526,21 @@
 
 <!-- Scrollbar JS -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+<!---->
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script>
+
+<!-- Wow JS -->
+<script src="js/wow.js"></script>
+
+
+<!-- Fancybox JS -->
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+<!---->
+
+<!-- Scrollflow JS -->
+<!--<script src="js/scrollflow.js"></script>-->
 <!---->
 
 <!-- Isotope JS -->

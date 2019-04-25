@@ -1,0 +1,182 @@
+
+
+.navbar {
+  height: 100px;
+  min-height: 100px;
+  z-index: 10;
+  background-color: transparent;
+  transition: height 0.3s;
+
+  &.shrink {
+    background-color: $default-light-color;
+    height: 60px;
+    min-height: 60px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+  }
+
+  .navbar-brand {
+    font-size: 18px;
+    font-weight: 600;
+    color: $default-color;
+  }
+
+}
+
+.sidebarNavClose {
+  padding: 0;
+  height: 40px;
+  width: 40px;
+
+  span {
+    width: 17px;
+    position: relative;
+    display: block;
+    height: 2px;
+    background-color: $default-color;
+
+    &:before,
+    &:after {
+      display: block;
+      height: 2px;
+      background-color: $default-color;
+      content: '';
+      width: 12px;
+      position: absolute;
+    }
+
+    &:before {
+      right: -3px;
+      bottom: -4px;
+      transform: rotate(-45deg);
+    }
+
+    &:after {
+      right: -3px;
+      top: -4px;
+      transform: rotate(45deg);
+    }
+  }
+
+}
+
+.sidebarNavCollapse {
+  padding: 0.75rem 0;
+  height: 40px;
+  width: 31px;
+
+  &:before,
+  &:after {
+    content: '';
+
+  }
+
+  &:after {
+    width: 23px;
+  }
+
+  &:before {
+    width: 31px;
+  }
+
+  span {
+    width: 15px;
+  }
+
+  span,
+  &:before,
+  &:after {
+    display: block;
+    height: 1px;
+    background-color: $default-color;
+    transition: .2s;
+  }
+
+  &:hover {
+    span,
+    &:before,
+    &:after {
+      width: 31px;
+    }
+  }
+
+
+  font-size: 25px;
+  color: $default-color;
+}
+
+.nav-overlay {
+  display: none;
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 11;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+
+  &.active {
+    display: block;
+    opacity: 1;
+  }
+}
+
+.nav-sidebar {
+  width: 320px;
+  position: fixed;
+  top: 0;
+  right: -328px;
+  height: 100vh;
+  z-index: 12;
+  background: $default-light-color;
+  color: $default-color;
+  transition: all 0.3s;
+  overflow-y: auto;
+  box-shadow: 2px 0 8px rgba(0, 0, 0, 0.6);
+
+  &.active {
+    right: 0;
+  }
+
+  .sidebar-header {
+    padding: 20px 0;
+  }
+
+  ul {
+    ul {
+
+      li {
+        a {
+          padding-left: 25px;
+        }
+      }
+    }
+
+    li {
+      a {
+        padding: 10px;
+        font-size: 16px;
+        display: block;
+        color: $default-color;
+
+        &:hover {
+          background-color: $default-color;
+          color: $default-light-color;
+          text-decoration: none;
+          transition: .3s;
+        }
+      }
+
+      &.active {
+        & > a {
+          background: $default-primary-color;
+
+          &:hover {
+            background: $default-primary-color;
+            color: $default-color;
+          }
+        }
+      }
+    }
+  }
+}
+

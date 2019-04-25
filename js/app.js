@@ -1,5 +1,6 @@
-$(document).ready(function () {
 
+
+$(document).ready(function () {
 
     <!-- ************** FOR SCROLLBAR MENU *****************-->
 
@@ -69,7 +70,7 @@ $(document).ready(function () {
 
 
     <!-- ************** FOR PORTFOLIO FILTER *****************-->
-    
+
     $(".portfolio .filter-list a").on('click', function (e) {
         e.preventDefault();
 
@@ -88,6 +89,16 @@ $(document).ready(function () {
 
     <!-- *** -->
 
+
+
+    <!-- ************** WOW LIBRARY *****************-->
+    var wow = new WOW(
+        {
+            mobile: false
+        }
+    );
+    wow.init();
+    <!-- *** -->
 
 });
 
