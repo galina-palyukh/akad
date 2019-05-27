@@ -1,0 +1,22 @@
+.breadcrumb {
+  font-size: $small-font-size;
+  background: transparent;
+
+  .breadcrumb-item {
+    & > a {
+      color: $default-color;
+
+      &:hover {
+        color: lighten($default-color, 10%);
+        text-decoration: none;
+      }
+
+    }
+
+    &.active {
+      color: $default-color;
+    }
+  }
+
+
+}

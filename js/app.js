@@ -1,5 +1,3 @@
-
-
 $(document).ready(function () {
 
     <!-- ************** FOR SCROLLBAR MENU *****************-->
@@ -68,6 +66,32 @@ $(document).ready(function () {
 
 
 
+    <!-- ************** WOW LIBRARY *****************-->
+    var wow = new WOW(
+        {
+            mobile: false
+        }
+    );
+    wow.init();
+    <!-- *** -->
+
+    <!-- ************** FOR OWLCAROUSEL *****************-->
+    $(".owl-carousel").owlCarousel(
+        {
+            loop:true,
+            items:1,
+            navigation : false,
+            slideSpeed : 500,
+            paginationSpeed : 800,
+            rewindSpeed : 1000,
+            singleItem: true,
+            autoPlay : true,
+            stopOnHover : true
+
+        }
+    );
+    <!-- *** -->
+
 
     <!-- ************** FOR PORTFOLIO FILTER *****************-->
 
@@ -90,15 +114,6 @@ $(document).ready(function () {
     <!-- *** -->
 
 
-
-    <!-- ************** WOW LIBRARY *****************-->
-    var wow = new WOW(
-        {
-            mobile: false
-        }
-    );
-    wow.init();
-    <!-- *** -->
 
 });
 

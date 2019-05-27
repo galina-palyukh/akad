@@ -1,0 +1,38 @@
+.reviews{
+  .owl-carousel {
+
+
+    .owl-item {
+      img {
+        width: auto;
+      }
+    }
+  }
+  .author-name{
+    color: $default-light-color;
+    background-color: $default-primary-color;
+    font-family: $default-primary-font-family;
+  }
+}
+
+/* Styling Pagination*/
+.owl-theme .owl-dots .owl-dot span{
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  width: 100px;
+  height: 5px;
+  margin-left: 2px;
+  margin-right: 2px;
+  background: #ccc;
+  border:none;
+}
+
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span{
+  background: #3F51B5;
+}
+
+
+
+

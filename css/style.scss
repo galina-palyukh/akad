@@ -1,5 +1,6 @@
 @import "variables";
 @import "mixins";
+@import "extra-classes";
 @import "buttons";
 @import "header";
 @import "hero";
@@ -7,6 +8,8 @@
 @import "services";
 @import "portfolio";
 @import "newsletter";
+@import "breadcrumbs";
+@import "review";
 
 .wrapper {
   width: 100%;
@@ -80,7 +83,8 @@ h4,
 h5,
 h6 {
   text-transform: $base-heading-text-transform;
-  font-weight: $base-heading-font-weight
+  font-weight: $base-heading-font-weight;
+  font-family: $default-primary-font-family;
 
 }
 
@@ -200,10 +204,6 @@ h6 {
   line-height: 18px;
 }
 
-.small-text {
-  font-size: $small-font-size;
-}
-
 
 .background {
   background-position: 50% 50%;
@@ -283,5 +283,10 @@ section {
 
 }
 
-
-
+.color-square {
+  width: 40px;
+  height: 40px;
+  font-size: 24px;
+  color: $default-light-color;
+  background-color: $default-primary-color;
+}
