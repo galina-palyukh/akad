@@ -1,0 +1,18 @@
+.benefits-icon {
+  position: relative;
+  *[class^="icon"] {
+    font-size: 40px;
+    position: relative;
+  }
+
+  &::before{
+    content: "";
+    width: 38px;
+    bottom: 7px;
+    position: absolute;
+    left: calc(50% - 28px);
+    height: 16px;
+    background-color: $default-primary-color;
+    display: block;
+  }
+}

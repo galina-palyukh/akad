@@ -9,8 +9,8 @@
 }
 
 
-.button-primary,
-.button-secondary {
+.btn-primary,
+.btn-secondary {
   position: relative;
   z-index: 1;
   overflow: hidden;
@@ -102,7 +102,9 @@
 }
 
 
-.button-primary {
+
+
+.btn-primary {
   background-color: $default-primary-color;
   color: $default-light-color;
 
@@ -114,7 +116,23 @@
 
 }
 
-.button-secondary {
+.btn-primary:not(:disabled):not(.disabled).active,
+.btn-primary:not(:disabled):not(.disabled):active{
+  background-color: $default-primary-color;
+  color: $default-light-color;
+}
+
+
+.btn-primary:not(:disabled):not(.disabled).active:focus,
+.btn-primary:not(:disabled):not(.disabled):active:focus{
+  box-shadow: none;
+}
+
+
+
+
+
+.btn-secondary {
   color: $default-primary-color;
   background-color: $default-light-color;
 
@@ -124,3 +142,16 @@
     background-color: $default-light-color;
   }
 }
+
+.btn-primary:not(:disabled):not(.disabled).active,
+.btn-primary:not(:disabled):not(.disabled):active{
+  color: $default-primary-color;
+  background-color: $default-light-color;
+}
+
+
+.btn-primary:not(:disabled):not(.disabled).active:focus,
+.btn-primary:not(:disabled):not(.disabled):active:focus{
+  box-shadow: none;
+}
+

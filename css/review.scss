@@ -1,5 +1,40 @@
-.reviews{
+.reviews-carousel {
   .owl-carousel {
+
+    /* Styling Pagination for owl-carousel*/
+    .owl-dots .owl-dot span {
+      -webkit-border-radius: 0;
+      -moz-border-radius: 0;
+      border-radius: 0;
+      width: 16px;
+      height: 5px;
+      margin-left: 4px;
+      margin-right: 4px;
+      background: #60606e;
+      border: none;
+      transition: all .3s ease;
+
+    }
+    .owl-nav.disabled+.owl-dots {
+      margin-top: 30px;
+    }
+    
+    .owl-dots .owl-dot:focus{
+      outline: none;
+    }
+
+    .owl-dots .owl-dot:hover span {
+      background: $default-primary-color;
+    }
+
+    .owl-dots .owl-dot.active span {
+      width: 32px;
+      background: $default-primary-color;
+
+    }
+
+
+    /***/
 
 
     .owl-item {
@@ -8,30 +43,17 @@
       }
     }
   }
-  .author-name{
+
+  .author-name {
     color: $default-light-color;
     background-color: $default-primary-color;
     font-family: $default-primary-font-family;
   }
 }
 
-/* Styling Pagination*/
-.owl-theme .owl-dots .owl-dot span{
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
-  border-radius: 0;
-  width: 100px;
-  height: 5px;
-  margin-left: 2px;
-  margin-right: 2px;
-  background: #ccc;
-  border:none;
-}
 
-.owl-theme .owl-dots .owl-dot.active span,
-.owl-theme .owl-dots .owl-dot:hover span{
-  background: #3F51B5;
-}
+
+
 
 
 
