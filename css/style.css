@@ -516,6 +516,46 @@ footer .nav-footer li a {
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 
+.card-pricing {
+  border-top: 5px solid #7beec7;
+  max-width: 360px;
+  transition: all 0.3s;
+  position: relative;
+}
+.card-pricing::after {
+  content: "";
+  border: 10px solid transparent;
+  border-top: 10px solid #7beec7;
+  border-right: 10px solid #7beec7;
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.card-pricing .card-price {
+  padding: 2px 20px;
+  background-color: #7beec7;
+  color: #fff;
+}
+.card-pricing .card-footer {
+  border: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  background-color: transparent;
+}
+.card-pricing.active {
+  box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.25);
+}
+.card-pricing:hover {
+  box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.25);
+}
+@media screen and (max-width: 1024px) {
+  .card-pricing {
+    box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.25);
+  }
+}
+
 .wrapper {
   width: 100%;
   min-height: 100vh;
