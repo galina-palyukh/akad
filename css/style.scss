@@ -12,6 +12,22 @@
 @import "breadcrumbs";
 @import "review";
 @import "pricing";
+@import "blog";
+
+
+.muted-color{
+  color: $default-muted-color;
+}
+
+
+
+.font-primary{
+  font-family: $default-primary-font-family;
+}
+
+
+
+
 
 .wrapper {
   width: 100%;
@@ -128,6 +144,7 @@ h6 {
   text-transform: $base-heading-text-transform;
   font-weight: $base-heading-font-weight;
   font-family: $default-primary-font-family;
+  color: $default-color;
 
 }
 

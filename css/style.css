@@ -1,5 +1,5 @@
-.small-text {
-  font-size: 14px;
+.small-size {
+  font-size: 12px;
 }
 
 .text-justify {
@@ -32,7 +32,6 @@
   transition-delay: 0.2s;
   padding: 14px 30px;
   border: none;
-  font-size: 14px;
   border-radius: 0;
   font-weight: 600;
   text-transform: uppercase;
@@ -151,6 +150,23 @@
   box-shadow: none;
 }
 
+.btn-info {
+  color: #60606e;
+  text-transform: uppercase;
+  background: transparent;
+  border: none;
+  font-weight: 600;
+  padding: 6px 0;
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-info:not(:disabled):not(.disabled).active:focus,
+.btn-info:not(:disabled):not(.disabled):active:focus {
+  box-shadow: none;
+}
+
 .navbar {
   height: 100px;
   min-height: 100px;
@@ -264,6 +280,10 @@
 .nav-sidebar .sidebar-header {
   padding: 20px 0;
 }
+.nav-sidebar ul ul {
+  list-style: none;
+  padding-left: 0;
+}
 .nav-sidebar ul ul li a {
   padding-left: 25px;
 }
@@ -328,7 +348,6 @@ footer {
   background-color: #fff;
 }
 footer .copyright {
-  font-size: 14px;
   color: #9a9a9a;
 }
 footer .social-list a {
@@ -361,7 +380,6 @@ footer .nav-footer li a {
   padding-left: 10px;
   padding-right: 10px;
   color: #9a9a9a;
-  font-size: 14px;
 }
 
 .services .services-item span[class^=icon-ios] {
@@ -464,7 +482,6 @@ footer .nav-footer li a {
 }
 
 .breadcrumb {
-  font-size: 14px;
   background: transparent;
 }
 .breadcrumb .breadcrumb-item > a {
@@ -554,6 +571,216 @@ footer .nav-footer li a {
   .card-pricing {
     box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.25);
   }
+}
+
+.post-date {
+  background-color: #7beec7;
+  color: #fff;
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+.card-title h5 {
+  transition: all 0.3s;
+}
+.card-title:hover {
+  text-decoration: none;
+}
+.card-title:hover h5 {
+  color: #7beec7;
+}
+
+.card-info a:hover {
+  text-decoration: none;
+  transition: all 0.3s;
+}
+.card-info .comments,
+.card-info .likes {
+  transition: 0.3s;
+  color: #ccc;
+}
+.card-info .comments > span,
+.card-info .likes > span {
+  font-size: 21px;
+}
+.card-info .comments:hover,
+.card-info .likes:hover {
+  color: #999999;
+  cursor: pointer;
+}
+.card-info .likes > span {
+  color: #ea6a6a;
+}
+.card-info .likes:hover > span {
+  color: #e43d3d;
+}
+
+.box-comment__body {
+  background-color: #f3f3f3;
+}
+.box-comment__body::before {
+  top: 15px;
+  left: -16px;
+  border: 0 solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-color: transparent;
+  border-right-color: #f3f3f3;
+  border-width: 16px;
+  margin-left: -16px;
+}
+.box-comment__body .date,
+.box-comment__body .author {
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+.comment-list__reply {
+  margin-left: 40px;
+}
+
+.box-comment__avatar {
+  width: 60px;
+  height: 60px;
+  line-height: 57px;
+  font-size: 26px;
+  color: #f3f3f3;
+  border: 2px solid #f3f3f3;
+}
+
+.box-comment {
+  margin-bottom: 40px;
+}
+.box-comment .box-comment {
+  margin-bottom: 15px;
+}
+
+.wr-comments {
+  height: 0;
+  overflow: hidden;
+}
+.wr-comments.visible-1 {
+  height: auto;
+}
+.wr-comments .btn_close-comments {
+  color: #ccc;
+  font-size: 28px;
+  transition: 0.2s;
+}
+.wr-comments .btn_close-comments:hover {
+  text-decoration: none;
+  color: #9a9a9a;
+}
+.wr-comments .btn_close-comments:focus {
+  outline: none;
+}
+
+.search-post {
+  border: 1px solid #f3f3f3;
+}
+.search-post input {
+  background-color: #f3f3f3;
+  min-height: 40px;
+  border: none;
+  outline: none;
+}
+.search-post input:focus {
+  background-color: transparent;
+}
+.search-post .btn-success {
+  font-size: 22px;
+  background-color: #f3f3f3;
+  color: #60606e;
+  transition: 0.2s;
+}
+.search-post .btn-success:hover {
+  color: #7beec7;
+}
+.search-post .btn-success:not(:disabled):not(.disabled).active, .search-post .btn-success:not(:disabled):not(.disabled):active {
+  background-color: #f3f3f3;
+  color: #7beec7;
+}
+.search-post .btn-success:not(:disabled):not(.disabled).active:focus, .search-post .btn-success:not(:disabled):not(.disabled):active:focus {
+  box-shadow: none;
+}
+
+.filter-posts .filter-list {
+  border-bottom: 2px solid #cdcdcd;
+}
+.filter-posts .filter-list > li a {
+  display: block;
+  padding: 6px 6px 20px 6px;
+  color: #999999;
+  font-size: 12px;
+  transition: 0.2s;
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  position: relative;
+}
+.filter-posts .filter-list > li a::after {
+  content: "";
+  position: absolute;
+  background-color: transparent;
+  height: 2px;
+  width: 0;
+  bottom: -2px;
+  left: 0;
+  right: 0;
+  transition: all 0.4s ease-in;
+}
+.filter-posts .filter-list > li a.is-active, .filter-posts .filter-list > li a:hover {
+  color: #60606e;
+  text-decoration: none;
+}
+.filter-posts .filter-list > li a.is-active::after, .filter-posts .filter-list > li a:hover::after {
+  width: 100%;
+  background-color: #7beec7;
+}
+
+.card-post_small .card-photo {
+  max-height: 85px;
+}
+.card-post_small:hover {
+  text-decoration: none;
+}
+
+.filter-categories .filter-list > li,
+.filter-archives .filter-list > li {
+  border-bottom: 1px solid #9a9a9a;
+}
+.filter-categories .filter-list > li a,
+.filter-archives .filter-list > li a {
+  display: block;
+  color: #9a9a9a;
+  transition: 0.2s;
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  position: relative;
+}
+.filter-categories .filter-list > li a.is-active, .filter-categories .filter-list > li a:hover,
+.filter-archives .filter-list > li a.is-active,
+.filter-archives .filter-list > li a:hover {
+  color: #60606e;
+  text-decoration: none;
+}
+
+.filter-tags .filter-list > li a {
+  background-color: #e5e5e5;
+  font-size: 12px;
+  color: #999999;
+  transition: 0.3s;
+}
+.filter-tags .filter-list > li a.is-active, .filter-tags .filter-list > li a:hover {
+  text-decoration: none;
+  background: #7beec7;
+  color: #fff;
+}
+
+.muted-color {
+  color: #9a9a9a;
+}
+
+.font-primary {
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 
 .wrapper {
@@ -665,6 +892,7 @@ h6 {
   text-transform: uppercase;
   font-weight: 600;
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  color: #60606e;
 }
 
 h1 {
@@ -755,7 +983,7 @@ h5 {
 }
 
 h6 {
-  font-size: 18px;
+  font-size: 14px;
   line-height: 1.2;
 }
 

@@ -1,0 +1,283 @@
+.post-date {
+  background-color: $default-primary-color;
+  color: $default-light-color;
+  font-family: $default-primary-font-family;
+}
+
+.card-title {
+
+  h5 {
+    transition: all .3s;
+  }
+
+  &:hover {
+    text-decoration: none;
+
+    h5 {
+      color: $default-primary-color;
+    }
+  }
+}
+
+
+.card-info {
+  a {
+    &:hover {
+      text-decoration: none;
+      transition: all .3s;
+    }
+  }
+
+  .comments,
+  .likes {
+    transition: .3s;
+    color: $default-middle-grey-color;
+
+    & > span {
+      font-size: 21px;
+    }
+
+    &:hover {
+      color: darken($default-middle-grey-color, 20%);
+      cursor: pointer;
+    }
+  }
+
+  .likes {
+    & > span {
+      color: #ea6a6a;
+    }
+
+    &:hover {
+      & > span {
+        color: darken(#ea6a6a, 10%);
+      }
+    }
+
+  }
+
+}
+
+
+.box-comment__body {
+  background-color: lighten($default-light-grey-color, 15%);
+
+  &::before {
+    top: 15px;
+    left: -16px;
+    border: 0 solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-color: transparent;
+    border-right-color: lighten($default-light-grey-color, 15%);
+    border-width: 16px;
+    margin-left: -16px;
+  }
+
+  .date,
+  .author {
+    font-family: $default-primary-font-family;
+  }
+
+}
+
+
+.comment-list__reply {
+  margin-left: 40px;
+  //margin-top: -25px;
+}
+
+
+.box-comment__avatar {
+  width: 60px;
+  height: 60px;
+  line-height: 57px;
+  font-size: 26px;
+  color: lighten($default-light-grey-color, 15%);
+  border: 2px solid lighten($default-light-grey-color, 15%);
+}
+
+
+.box-comment {
+  margin-bottom: 40px;
+
+  .box-comment {
+    margin-bottom: 15px;
+  }
+}
+
+
+.wr-comments {
+  height: 0;
+  overflow: hidden;
+
+  &.visible-1 {
+    height: auto;
+  }
+
+  .btn_close-comments {
+    color: $default-middle-grey-color;
+    font-size: 28px;
+    transition: .2s;
+
+    &:hover {
+      text-decoration: none;
+      color: $default-muted-color;
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+}
+
+
+.search-post {
+  border: 1px solid #f3f3f3;
+
+  input {
+    background-color: lighten($default-light-grey-color, 15%);
+    min-height: 40px;
+    border: none;
+    outline: none;
+
+    &:focus {
+      background-color: transparent;
+
+    }
+  }
+
+  .btn-success {
+    font-size: 22px;
+    background-color: lighten($default-light-grey-color, 15%);
+    color: $default-color;
+    transition: .2s;
+
+    &:hover {
+      color: $default-primary-color;
+    }
+
+    &:not(:disabled):not(.disabled).active,
+    &:not(:disabled):not(.disabled):active {
+      background-color: lighten($default-light-grey-color, 15%);
+      color: $default-primary-color;
+    }
+
+
+    &:not(:disabled):not(.disabled).active:focus,
+    &:not(:disabled):not(.disabled):active:focus {
+      box-shadow: none;
+    }
+
+  }
+
+}
+
+
+.filter-posts {
+  .filter-list {
+    border-bottom: 2px solid $default-light-grey-color;
+
+    & > li {
+      a {
+        display: block;
+        padding: 6px 6px 20px 6px;
+        color: $default-grey-color;
+        font-size: 12px;
+        transition: .2s;
+        font-family: $default-primary-font-family;
+        position: relative;
+
+        &::after {
+          content: '';
+          position: absolute;
+          background-color: transparent;
+          height: 2px;
+          width: 0;
+          bottom: -2px;
+          left: 0;
+          right: 0;
+          transition: all 0.4s ease-in;
+        }
+
+        &.is-active,
+        &:hover {
+          color: $default-color;
+          text-decoration: none;
+
+          &::after {
+            width: 100%;
+            background-color: $default-primary-color;
+          }
+
+        }
+      }
+    }
+
+  }
+}
+
+
+
+.card-post_small {
+  .card-photo {
+    max-height: 85px;
+  }
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+
+.filter-categories,
+.filter-archives{
+  .filter-list {
+    & > li {
+      border-bottom: 1px solid $default-muted-color;
+      a {
+        display: block;
+        color: $default-muted-color;
+        transition: .2s;
+        font-family: $default-primary-font-family;
+        position: relative;
+
+        &.is-active,
+        &:hover {
+          color: $default-color;
+          text-decoration: none;
+        }
+
+      }
+    }
+  }
+}
+
+.filter-tags{
+.filter-list{
+
+  & >li{
+    a{
+      background-color: #e5e5e5 ;
+      font-size: 12px;
+      color: $default-grey-color;
+      transition: .3s;
+
+      &.is-active,
+      &:hover{
+        text-decoration: none;
+        background: $default-primary-color;
+        color: $default-light-color;
+
+
+      }
+    }
+  }
+
+}
+
+}
+

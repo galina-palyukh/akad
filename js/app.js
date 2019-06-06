@@ -11,8 +11,46 @@ $(document).ready(function () {
         mouseWheel: {
             deltaFactor: 300
         }
-
     });
+    <!-- *** -->
+
+
+    <!-- ************** FOR COUNTER LIKES *****************-->
+
+    $('.counter-like').click(function (e) {
+
+        e.preventDefault();
+        $(this).find('.counter-like_value').html(function (i, val) {
+            return val * 1 + 1
+        });
+    });
+    <!-- *** -->
+
+
+    <!-- ************** FOR APPEARANCE AND DISAPPEARANCE COMMENTS ON THE BLOG PAGE *****************-->
+
+    $(".open-comments").click(function (e) {
+
+        e.preventDefault();
+
+        var WrComments = $(this).closest('article').find('.wr-comments');
+
+        WrComments.addClass('visible-1', 700);
+
+
+        $('html, body').animate({
+            scrollTop: WrComments.offset().top - 90 // класс объекта к которому приезжаем
+        }, 700); // Скорость прокрутки
+    });
+
+    $('.btn_close-comments').click(function (e) {
+        e.preventDefault();
+
+        var BtnCloseComments = $(this).closest('article').find('.wr-comments');
+        BtnCloseComments.removeClass('visible-1', 500);
+    });
+
+
     <!-- *** -->
 
 
@@ -40,6 +78,58 @@ $(document).ready(function () {
     <!-- *** -->
 
 
+    // <!-- ************** FILTER FOR  POSTS *****************-->
+    //
+    //     $(".filter-post_latest").click(function (e) {
+    //         e.preventDefault();
+    //         $(".post-comment, .post-popular").fadeOut(0);
+    //         $(".post_latest").fadeIn(0);
+    //
+    //         var currentValue = $(this).html();//взять текущий эл-т и вытащить его html
+    //         $(".portfolio-filter .selected-filter").html(currentValue);
+    //
+    //         $(".portfolio-filter").removeClass("open");
+    //
+    //     });
+    //
+    //     $(".filter-frontend").click(function (event) {
+    //         event.preventDefault();
+    //         $(".app, .design").fadeOut(0);
+    //         $(".frontend").fadeIn(0);
+    //
+    //         var currentValue = $(this).html();//взять текущий эл-т и вытащить его html
+    //         $(".portfolio-filter .selected-filter").html(currentValue);
+    //
+    //         $(".portfolio-filter").removeClass("open");
+    //
+    //     });
+    //
+    //     $(".filter-design").click(function (event) {
+    //         event.preventDefault();
+    //         $(".frontend, .app").fadeOut(0);
+    //         $(".design").fadeIn(0);
+    //
+    //         var currentValue = $(this).html();//взять текущий эл-т и вытащить его html
+    //         $(".portfolio-filter .selected-filter").html(currentValue);
+    //
+    //         $(".portfolio-filter").removeClass("open");
+    //
+    //     });
+    //
+    //     $(".filter-all").click(function (event) {
+    //         event.preventDefault();
+    //         $(".frontend, .app, .design").fadeIn(0);
+    //
+    //         var currentValue = $(this).html();//взять текущий эл-т и вытащить его html
+    //         $(".portfolio-filter .selected-filter").html(currentValue);
+    //
+    //         $(".portfolio-filter").removeClass("open");
+    //
+    //     });
+    //
+    // <!-- *** -->
+
+
     <!-- ************** FOR SCROLL HEADER *****************-->
     $(function () {
         var shrinkHeader = 170;
@@ -65,7 +155,6 @@ $(document).ready(function () {
     <!-- *** -->
 
 
-
     <!-- ************** WOW LIBRARY *****************-->
     var wow = new WOW(
         {
@@ -75,18 +164,19 @@ $(document).ready(function () {
     wow.init();
     <!-- *** -->
 
+
     <!-- ************** FOR OWLCAROUSEL *****************-->
     $(".owl-carousel").owlCarousel(
         {
-            loop:true,
-            items:1,
-            navigation : false,
-            slideSpeed : 500,
-            paginationSpeed : 800,
-            rewindSpeed : 1000,
+            loop: true,
+            items: 1,
+            navigation: false,
+            slideSpeed: 500,
+            paginationSpeed: 800,
+            rewindSpeed: 1000,
             singleItem: true,
-            autoPlay : true,
-            stopOnHover : true
+            autoPlay: true,
+            stopOnHover: true
 
         }
     );
@@ -112,7 +202,6 @@ $(document).ready(function () {
     });
 
     <!-- *** -->
-
 
 
 });

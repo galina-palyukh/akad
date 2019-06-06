@@ -18,7 +18,6 @@
   transition-delay: 0.2s;
   padding: 14px 30px;
   border: none;
-  font-size: $small-font-size;
   border-radius: 0;
   font-weight: 600;
   text-transform: uppercase;
@@ -67,7 +66,6 @@
   }
 }
 
-
 @-webkit-keyframes criss-cross-right {
   0% {
     right: -20px;
@@ -83,7 +81,6 @@
     height: 375px;
   }
 }
-
 
 @-webkit-keyframes criss-cross-left {
   0% {
@@ -101,9 +98,6 @@
   }
 }
 
-
-
-
 .btn-primary {
   background-color: $default-primary-color;
   color: $default-light-color;
@@ -117,19 +111,15 @@
 }
 
 .btn-primary:not(:disabled):not(.disabled).active,
-.btn-primary:not(:disabled):not(.disabled):active{
+.btn-primary:not(:disabled):not(.disabled):active {
   background-color: $default-primary-color;
   color: $default-light-color;
 }
 
-
 .btn-primary:not(:disabled):not(.disabled).active:focus,
-.btn-primary:not(:disabled):not(.disabled):active:focus{
+.btn-primary:not(:disabled):not(.disabled):active:focus {
   box-shadow: none;
 }
-
-
-
 
 
 .btn-secondary {
@@ -144,14 +134,53 @@
 }
 
 .btn-primary:not(:disabled):not(.disabled).active,
-.btn-primary:not(:disabled):not(.disabled):active{
+.btn-primary:not(:disabled):not(.disabled):active {
   color: $default-primary-color;
   background-color: $default-light-color;
 }
 
 
 .btn-primary:not(:disabled):not(.disabled).active:focus,
-.btn-primary:not(:disabled):not(.disabled):active:focus{
+.btn-primary:not(:disabled):not(.disabled):active:focus {
   box-shadow: none;
 }
+
+.btn-info {
+  color: $default-color;
+  text-transform: uppercase;
+  background: transparent;
+  border: none;
+  font-weight: 600;
+  padding: 6px 0;
+  font-family: $default-primary-font-family;
+  position: relative;
+  overflow: hidden;
+
+  //&:hover,
+  //&:focus {
+  //  color: $default-color;
+  //  background: transparent;
+  //}
+  //
+  //&::after {
+  //  content: "continue reading ";
+  //  position: absolute;
+  //  color: $default-primary-color;
+  //  z-index: 1;
+  //  transition: all 0.5s;
+  //  width: 100%;
+  //  height: 100%;
+  //  overflow: hidden;
+  //  align-items: center;
+  //  display: flex;
+  //  right: 0;
+  //  left: 0;
+  //}
+}
+
+.btn-info:not(:disabled):not(.disabled).active:focus,
+.btn-info:not(:disabled):not(.disabled):active:focus {
+  box-shadow: none;
+}
+
 
