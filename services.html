@@ -7,7 +7,17 @@
     <!---->
 
 
-    <title>AKAD/Services</title>
+    <title>Services</title>
+
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <!---->
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&display=swap"
@@ -81,23 +91,11 @@
                         </li>
 
                         <li>
-                            <a href="#servicesSubmenu" data-toggle="collapse" aria-expanded="false">Services</a>
-
-                            <ul class="collapse submenu" id="servicesSubmenu">
-                                <li>
-                                    <a href="#">Services</a>
-                                </li>
-                                <li>
-                                    <a href="#">Services</a>
-                                </li>
-                                <li>
-                                    <a href="#">Services</a>
-                                </li>
-                            </ul>
+                            <a href="services.html">Services</a>
                         </li>
 
                         <li>
-                            <a href="portfolio.html">Portfolio</a>
+                            <a href="portfolio-list.html">Portfolio</a>
                         </li>
 
                         <li>
@@ -136,7 +134,7 @@
                         <h2 class=" py-2 "> services</h2>
                         <nav aria-label="breadcrumb ">
                             <ol class="breadcrumb font-weight-bold text-uppercase justify-content-center p-0">
-                                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                                <li class="breadcrumb-item"><a href="index">Home</a></li>
                                 <li class="breadcrumb-item active" aria-current="page">Services</li>
                             </ol>
                         </nav>
@@ -255,7 +253,7 @@
         <section>
             <div class="container">
                 <div class="row">
-                    <div class="col-sm-6 col-lg-3 text-center mb-4 mb-lg-0">
+                    <div class="col-sm-6 col-lg-3 text-center mb-4 mb-lg-0 fadeInUp wow">
                         <div class="benefits-icon mb-3">
                             <span class="icon-ios-pulse"></span>
                         </div>
@@ -265,7 +263,7 @@
                     </div>
 
 
-                    <div class="col-sm-6 col-lg-3 text-center mb-4 mb-lg-0">
+                    <div class="col-sm-6 col-lg-3 text-center mb-4 mb-lg-0 fadeInUp wow">
                         <div class="benefits-icon mb-3">
                             <span class="icon-ios-infinite "></span>
                         </div>
@@ -275,7 +273,7 @@
                     </div>
 
 
-                    <div class="col-sm-6 col-lg-3 text-center mb-4 mb-sm-0">
+                    <div class="col-sm-6 col-lg-3 text-center mb-4 mb-sm-0 fadeInUp wow">
                         <div class="benefits-icon mb-3">
                             <span class="icon-ios-bulb"></span>
                         </div>
@@ -285,7 +283,7 @@
                     </div>
 
 
-                    <div class="col-sm-6 col-lg-3 text-center">
+                    <div class="col-sm-6 col-lg-3 text-center fadeInUp wow">
                         <div class="benefits-icon mb-3">
                             <span class="icon-ios-options"></span>
                         </div>
@@ -498,9 +496,12 @@
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
                                 incididunt ut labore et dolore magna aliqua.</p>
                             <div class="input-group mb-3">
-                                <input type="email" class="form-control rounded-0" id="email"
-                                       placeholder="YOUR EMAIL"
-                                       required>
+                                <div class="box-field">
+                                    <input type="text" class="form-control rounded-0" id="email"
+                                           placeholder="" name="email-contacts" required>
+                                    <label for="email">Your email</label>
+                                </div>
+
                                 <div class="input-group-append">
                                     <button class="btn btn-primary" type="submit">send</button>
                                 </div>
@@ -509,6 +510,7 @@
                     </div>
                 </div>
             </div>
+
         </section>
         <!--NEWSLETTER END-->
 

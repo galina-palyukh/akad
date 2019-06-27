@@ -2,31 +2,36 @@
 @import "mixins";
 @import "extra-classes";
 @import "buttons";
+@import "forms";
 @import "header";
 @import "hero";
 @import "footer";
+@import "elements";
+@import "components";
+
+
 @import "services";
 @import "portfolio";
 @import "benefits";
 @import "newsletter";
-@import "breadcrumbs";
 @import "review";
 @import "pricing";
 @import "blog";
+@import "contacts";
 
 
-.muted-color{
+.muted-color {
   color: $default-muted-color;
 }
 
 
-
-.font-primary{
+.font-primary {
   font-family: $default-primary-font-family;
 }
 
-
-
+a {
+  cursor: pointer;
+}
 
 
 .wrapper {
@@ -57,81 +62,6 @@ body {
     max-height: 270px;
     overflow: hidden;
   }
-}
-
-
-.checkbox {
-  position: relative;
-  padding-left: 25px;
-}
-
-
-input[type="checkbox"] {
-  position: absolute;
-  left: 0;
-  display: inline-block;
-  height: 16px;
-  width: 16px;
-  overflow: hidden;
-  margin-top: 6px;
-  border-radius: 3px;
-  vertical-align: middle;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  background-color: transparent;
-  background-repeat: no-repeat;
-  background-size: 13px;
-  background-position: 50% 50%;
-  border: 1px solid $default-primary-color;
-  box-shadow: none;
-  margin-right: 8px;
-  cursor: pointer;
-  transition: all .2s ease;
-}
-
- input[type="checkbox"]:checked {
-  background-color: $default-primary-color;
-  background-image: url('data:image/svg+xml;utf8,<svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="20" height="16" viewBox="0 0 22 16" stroke="white"><path fill="none" stroke="inherit" stroke-width="1.8824" stroke-miterlimit="50" stroke-linecap="butt" stroke-linejoin="miter" d="M20.028 2.353l-12.028 12.028-6.381-6.381"></path></svg>');
-}
-
-
- input:focus{
-   outline: none;
- }
-
-
-
-.form-control {
-  border: $base-border-width solid $base-border-color;
-  color: $default-color;
-
-  &:focus {
-    outline: none;
-    box-shadow: none;
-    border-color: $base-border-color;
-  }
-}
-
-::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-  color: $default-light-grey-color !important;
-  font-weight: 600;
-  font-size: 12px;
-  text-transform: uppercase;
-  opacity: 1; /* Firefox */
-}
-
-:-ms-input-placeholder { /* Internet Explorer 10-11 */
-  color: $default-light-grey-color !important;
-  font-weight: 600;
-  font-size: 12px;
-  text-transform: uppercase;
-}
-
-::-ms-input-placeholder { /* Microsoft Edge */
-  color: $default-light-grey-color !important;
-  font-weight: 600;
-  font-size: 12px;
-  text-transform: uppercase;
 }
 
 

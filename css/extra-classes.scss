@@ -10,10 +10,21 @@
   margin-bottom: 30px;
 }
 
+.mb-80{
+  margin-bottom: 80px;
+}
+
 .border-default {
   border-color: $default-color;
 }
 
 .height-100{
   height: 100px;
+}
+
+.muted-color{
+  color: $default-muted-color;
+}
+.grey-color{
+  color: $default-grey-color;
 }
