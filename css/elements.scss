@@ -1,0 +1,28 @@
+.scroll-top {
+  cursor: pointer;
+  width: 35px;
+  height: 35px;
+  font-size: 17px;
+  background-color: $default-primary-color;
+  color: $default-light-color;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  z-index: 10;
+  right: 15px;
+  bottom: 80px;
+  -webkit-transform: translate(0, 200px);
+  /* transform: translate(0, 200px); */
+  transition: all 0.3s ease-out;
+
+  &.active {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+
+  }
+  &:hover{
+    transform: scale(1.1);
+  }
+}
