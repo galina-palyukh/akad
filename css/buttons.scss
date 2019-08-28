@@ -133,8 +133,8 @@
   }
 }
 
-.btn-primary:not(:disabled):not(.disabled).active,
-.btn-primary:not(:disabled):not(.disabled):active {
+.btn-secondary:not(:disabled):not(.disabled).active,
+.btn-secondary:not(:disabled):not(.disabled):active {
   color: $default-primary-color;
   background-color: $default-light-color;
 }
@@ -150,7 +150,6 @@
   text-transform: uppercase;
   background: transparent;
   border: none;
-  font-weight: 600;
   padding: 6px 0;
   font-family: $default-primary-font-family;
   position: relative;
@@ -161,7 +160,8 @@
   }
 
   &:hover,
-  &:focus {
+  &:focus,
+  &:active{
     color: $default-color;
     background: transparent;
   }
@@ -175,6 +175,13 @@
 
 
 }
+
+.btn-info:not(:disabled):not(.disabled).active,
+.btn-info:not(:disabled):not(.disabled):active {
+  color: $default-color;
+  background: transparent;
+}
+
 
 .btn-info:not(:disabled):not(.disabled).active:focus,
 .btn-info:not(:disabled):not(.disabled):active:focus {

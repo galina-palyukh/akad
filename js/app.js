@@ -1,9 +1,6 @@
 $(document).ready(function () {
 
 
-
-
-
     <!-- ************** FOR SCROLL TOP *****************-->
     $(window).on('scroll load',  function() {
         if ($(window).scrollTop() >= $(window).height()) {
