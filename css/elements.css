@@ -1,0 +1,25 @@
+.scroll-top {
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  font-size: 17px;
+  background-color: #f9f6ed;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  z-index: 10;
+  right: 15px;
+  bottom: 80px;
+  -webkit-transform: translate(0, 200px);
+  /* transform: translate(0, 200px); */
+  transition: all 0.3s ease-out;
+  border-radius: 3px;
+}
+.scroll-top .scroll-top.active {
+  -webkit-transform: none;
+  transform: none;
+}
+
+/*# sourceMappingURL=elements.css.map */
