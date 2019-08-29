@@ -1,18 +1,82 @@
 $(document).ready(function () {
 
+
+
+
+
+    <!-- ************** FOR SCROLL TOP *****************-->
+    $(window).on('scroll load',  function() {
+        if ($(window).scrollTop() >= $(window).height()) {
+            $('.scroll-top').addClass('active')
+        } else {
+            $('.scroll-top').removeClass('active')
+
+        }
+    });
+
+    $('.scroll-top').on('click', function() {
+        $('html, body').stop();
+        $('html, body').animate({
+            scrollTop: 0
+        }, 1000);
+    });
+    <!-- *** -->
+
+
+    <!-- ************** FOR VALIDATION FORM *****************-->
+
+    // Get the forms we want to add validation styles to
+    var forms = document.getElementsByClassName('needs-validation');
+    // Loop over them and prevent submission
+    var validation = Array.prototype.filter.call(forms, function (form) {
+        form.addEventListener('submit', function (event) {
+            if (form.checkValidity() === false) {
+                event.preventDefault();
+                event.stopPropagation();
+            }
+            form.classList.add('was-validated');
+        }, false);
+    });
+    <!-- *** -->
+
     <!-- ************** FOR SCROLLBAR MENU *****************-->
 
-    $(".nav-sidebar").mCustomScrollbar({
-        theme: "dark-2",
-        scrollButtons: {
-            enable: true
-        },
-        scrollInertia: 0,
-        mouseWheel: {
-            deltaFactor: 300
+    $(".nav-sidebar").mCustomScrollbar(
+        {
+            theme: "dark-2",
+            scrollButtons: {
+                enable: true
+            },
+            scrollInertia: 0,
+            mouseWheel: {
+                deltaFactor: 300
+            }
+        }
+
+    );
+    <!-- *** -->
+
+
+    <!-- ************** FOR PORTFOLIO FILTER *****************-->
+
+    $(".portfolio .filter-list a").on('click', function (e) {
+        e.preventDefault();
+
+        $('.portfolio .filter-list a.is-checked').removeClass('is-checked');
+        $(this).addClass('is-checked');
+
+        var value = $(this).attr('data-filter');
+        if (value == "all") {
+            //$('.filter').removeClass('hidden');
+            $('.portfolio .filter-container .item').show(0);
+        } else {
+            $(".portfolio .filter-container .item").not(value).hide(0);
+            $(".portfolio .filter-container .item").filter(value).show(0);
         }
     });
     <!-- *** -->
+
+
 
 
     <!-- ************** FOR COUNTER LIKES *****************-->
@@ -78,56 +142,56 @@ $(document).ready(function () {
     <!-- *** -->
 
 
-    // <!-- ************** FILTER FOR  POSTS *****************-->
-    //
-    //     $(".filter-post_latest").click(function (e) {
-    //         e.preventDefault();
-    //         $(".post-comment, .post-popular").fadeOut(0);
-    //         $(".post_latest").fadeIn(0);
-    //
-    //         var currentValue = $(this).html();//взять текущий эл-т и вытащить его html
-    //         $(".portfolio-filter .selected-filter").html(currentValue);
-    //
-    //         $(".portfolio-filter").removeClass("open");
-    //
-    //     });
-    //
-    //     $(".filter-frontend").click(function (event) {
-    //         event.preventDefault();
-    //         $(".app, .design").fadeOut(0);
-    //         $(".frontend").fadeIn(0);
-    //
-    //         var currentValue = $(this).html();//взять текущий эл-т и вытащить его html
-    //         $(".portfolio-filter .selected-filter").html(currentValue);
-    //
-    //         $(".portfolio-filter").removeClass("open");
-    //
-    //     });
-    //
-    //     $(".filter-design").click(function (event) {
-    //         event.preventDefault();
-    //         $(".frontend, .app").fadeOut(0);
-    //         $(".design").fadeIn(0);
-    //
-    //         var currentValue = $(this).html();//взять текущий эл-т и вытащить его html
-    //         $(".portfolio-filter .selected-filter").html(currentValue);
-    //
-    //         $(".portfolio-filter").removeClass("open");
-    //
-    //     });
-    //
-    //     $(".filter-all").click(function (event) {
-    //         event.preventDefault();
-    //         $(".frontend, .app, .design").fadeIn(0);
-    //
-    //         var currentValue = $(this).html();//взять текущий эл-т и вытащить его html
-    //         $(".portfolio-filter .selected-filter").html(currentValue);
-    //
-    //         $(".portfolio-filter").removeClass("open");
-    //
-    //     });
-    //
-    // <!-- *** -->
+// <!-- ************** FILTER FOR  POSTS *****************-->
+//
+//     $(".filter-post_latest").click(function (e) {
+//         e.preventDefault();
+//         $(".post-comment, .post-popular").fadeOut(0);
+//         $(".post_latest").fadeIn(0);
+//
+//         var currentValue = $(this).html();//взять текущий эл-т и вытащить его html
+//         $(".portfolio-filter .selected-filter").html(currentValue);
+//
+//         $(".portfolio-filter").removeClass("open");
+//
+//     });
+//
+//     $(".filter-frontend").click(function (event) {
+//         event.preventDefault();
+//         $(".app, .design").fadeOut(0);
+//         $(".frontend").fadeIn(0);
+//
+//         var currentValue = $(this).html();//взять текущий эл-т и вытащить его html
+//         $(".portfolio-filter .selected-filter").html(currentValue);
+//
+//         $(".portfolio-filter").removeClass("open");
+//
+//     });
+//
+//     $(".filter-design").click(function (event) {
+//         event.preventDefault();
+//         $(".frontend, .app").fadeOut(0);
+//         $(".design").fadeIn(0);
+//
+//         var currentValue = $(this).html();//взять текущий эл-т и вытащить его html
+//         $(".portfolio-filter .selected-filter").html(currentValue);
+//
+//         $(".portfolio-filter").removeClass("open");
+//
+//     });
+//
+//     $(".filter-all").click(function (event) {
+//         event.preventDefault();
+//         $(".frontend, .app, .design").fadeIn(0);
+//
+//         var currentValue = $(this).html();//взять текущий эл-т и вытащить его html
+//         $(".portfolio-filter .selected-filter").html(currentValue);
+//
+//         $(".portfolio-filter").removeClass("open");
+//
+//     });
+//
+// <!-- *** -->
 
 
     <!-- ************** FOR SCROLL HEADER *****************-->
@@ -171,11 +235,13 @@ $(document).ready(function () {
             loop: true,
             items: 1,
             navigation: false,
-            slideSpeed: 500,
-            paginationSpeed: 800,
-            rewindSpeed: 1000,
+            // slideSpeed: 2000,
+            // paginationSpeed: 1000,
             singleItem: true,
-            autoPlay: true,
+            autoplay: true,
+            autoplayTimeout: 2500,
+            autoplayHoverPause: true,
+            autoplaySpeed: 1500,
             stopOnHover: true
 
         }
@@ -183,27 +249,7 @@ $(document).ready(function () {
     <!-- *** -->
 
 
-    <!-- ************** FOR PORTFOLIO FILTER *****************-->
-
-    $(".portfolio .filter-list a").on('click', function (e) {
-        e.preventDefault();
-
-        $('.portfolio .filter-list a.is-checked').removeClass('is-checked');
-        $(this).addClass('is-checked');
-
-        var value = $(this).attr('data-filter');
-        if (value == "all") {
-            //$('.filter').removeClass('hidden');
-            $('.portfolio .filter-container .item').show(0);
-        } else {
-            $(".portfolio .filter-container .item").not(value).hide(0);
-            $(".portfolio .filter-container .item").filter(value).show(0);
-        }
-    });
-
-    <!-- *** -->
-
-
-});
+})
+;
 
 

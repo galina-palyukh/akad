@@ -7,7 +7,16 @@
     <!---->
 
 
-    <title>AKAD/Blog</title>
+    <title>Blog</title>
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <!---->
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&display=swap"
@@ -93,23 +102,11 @@
                         </li>
 
                         <li>
-                            <a href="#servicesSubmenu" data-toggle="collapse" aria-expanded="false">Services</a>
-
-                            <ul class="collapse submenu" id="servicesSubmenu">
-                                <li>
-                                    <a href="#">Services</a>
-                                </li>
-                                <li>
-                                    <a href="#">Services</a>
-                                </li>
-                                <li>
-                                    <a href="#">Services</a>
-                                </li>
-                            </ul>
+                            <a href="services.html">Services</a>
                         </li>
 
                         <li>
-                            <a href="portfolio.html">Portfolio</a>
+                            <a href="portfolio-list.html">Portfolio</a>
                         </li>
 
                         <li>
@@ -148,7 +145,7 @@
                         <h2 class=" py-2 ">blog posts</h2>
                         <nav aria-label="breadcrumb ">
                             <ol class="breadcrumb font-weight-bold text-uppercase justify-content-center p-0">
-                                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
                                 <li class="breadcrumb-item active" aria-current="page">Blog</li>
                             </ol>
                         </nav>
@@ -159,8 +156,6 @@
         <!--HERO END-->
 
         <!--BLOG-->
-
-
         <section>
             <div class="container">
                 <div class="row justify-content-between flex-column-reverse flex-lg-row">
@@ -168,7 +163,7 @@
 
                     <div class="col-lg-8 ">
 
-                        <article class="card-post card border-0 rounded-0 mb-4 mb-md-5">
+                        <article class="card-post card border-0 rounded-0 mb-4 mb-md-5 fadeInUp wow" data-wow-delay=".5s">
 
                             <a href="#" class="mb-4"><img class="card-img-top rounded-0" src="images/blog/post2.jpg"
                                                           alt="Card image"></a>
@@ -285,7 +280,7 @@
                             </div>
                         </article>
 
-                        <article class="card-post card border-0 rounded-0 mb-4 mb-md-5 ">
+                        <article class="card-post card border-0 rounded-0 mb-4 mb-md-5 fadeInUp wow" data-wow-delay=".5s">
 
                             <a href="#" class="mb-4"><img class="card-img-top rounded-0" src="images/blog/post4.jpg"
                                                           alt="Card image"></a>
@@ -402,7 +397,7 @@
                             </div>
                         </article>
 
-                        <article class="card-post card border-0 rounded-0 mb-4 mb-md-5">
+                        <article class="card-post card border-0 rounded-0 mb-4 mb-md-5 fadeInUp wow" data-wow-delay=".5s">
 
                             <a href="#" class="mb-4"><img class="card-img-top rounded-0" src="images/blog/post1.jpg"
                                                           alt="Card image"></a>
@@ -518,7 +513,7 @@
                             </div>
                         </article>
 
-                        <article class="card-post card border-0 rounded-0 mb-4 mb-md-5">
+                        <article class="card-post card border-0 rounded-0 mb-4 mb-md-5 fadeInUp wow" data-wow-delay=".5s">
 
                             <a href="#" class="mb-4"><img class="card-img-top rounded-0" src="images/blog/post5.jpg"
                                                           alt="Card image"></a>
@@ -634,11 +629,22 @@
                                 </ul>
                             </div>
                         </article>
+
+
+                        <ul class="pagination d-flex justify-content-center fadeInUp wow" data-wow-delay=".3s">
+                            <li class="page-item"><a class="page-link" href="#"><span
+                                    class="icon-md-arrow-round-back"></span>Previous</a></li>
+                            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item "><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item"><a class="page-link" href="#">Next <span
+                                    class="icon-md-arrow-round-forward"></span></a></li>
+                        </ul>
                     </div>
 
                     <div class="col-lg-4 col-xl-3 mb-5 mb-lg-0">
 
-                        <div class="input-group mb-5 search-post">
+                        <div class="input-group mb-5 search-post fadeInUp wow" data-wow-delay=".5s">
                             <input type="text" class="form-control rounded-0" placeholder="Search...">
                             <div class="input-group-append">
                                 <button class="btn btn-success rounded-0 border-0 py-0" type="submit"><span
@@ -647,80 +653,188 @@
                         </div>
 
 
-                        <div class="filter-posts mb-5">
+                        <div class="filter-posts mb-5 fadeInUp wow" data-wow-delay=".5s">
 
                             <h6 class="mb-4">posts</h6>
 
-                            <ul class="filter-list list-unstyled d-flex justify-content-between">
-                                <li><a href="#"
-                                       class="pl-3 latest-post is-active text-uppercase font-weight-bold filter-post_latest">latest</a>
+                            <ul class="filter-list list-unstyled d-flex justify-content-between  nav nav-tabs">
+
+                                <li><a href="#filter-post_latest"
+                                       class="pl-3 latest-post active text-uppercase font-weight-bold filter-post_latest"
+                                       data-toggle="tab">latest</a>
                                 </li>
-                                <li><a href="#"
-                                       class=" popular-post text-uppercase font-weight-bold filter-post_popular">popular</a>
+                                <li><a href="#filter-post_popular"
+                                       class="popular-post text-uppercase font-weight-bold filter-post_popular"
+                                       data-toggle="tab">popular</a>
                                 </li>
-                                <li><a href="#"
-                                       class=" comments-post text-uppercase font-weight-bold filter-post_comments">comments</a>
+                                <li><a href="#filter-post_comments"
+                                       class=" comments-post text-uppercase font-weight-bold filter-post_comments"
+                                       data-toggle="tab">comments</a>
                                 </li>
                             </ul>
 
-                            <a href="#" class="row card-post_small mb-3">
-                                <div class="col-2 col-md-3 col-lg-4 overflow-hidden card-photo">
-                                    <img src="images/blog/post5.jpg" alt="post-img" class="img-fluid">
-                                </div>
 
-                                <div class="col-10 col-md-9 col-lg-8 d-flex flex-column justify-content-center">
-                                    <div>
-                                        <h6>Magna mollis ultricies</h6>
-                                        <time datetime="2012-10-3"
-                                              class=" font-primary d-block mt-n2">
+                            <div class="tab-content pt-4 fadeInUp wow" data-wow-delay=".5s">
+                                <div id="filter-post_latest" class="tab-pane active ">
+                                    <a href="#" class=" row card-post_small mb-3 ">
+                                        <div class="col-2 col-md-3 col-lg-4 overflow-hidden card-photo">
+                                            <img src="images/blog/post2.jpg" alt="post-img" class="img-fluid">
+                                        </div>
 
-                                            <div class="small-size muted-color">
-                                                3th oct 2012
+                                        <div class="col-10 col-md-9 col-lg-8 d-flex flex-column justify-content-center">
+                                            <div>
+                                                <h6>Magna mollis ultricies</h6>
+                                                <time datetime="2012-10-3"
+                                                      class=" font-primary d-block mt-n2">
+
+                                                    <div class="small-size muted-color">
+                                                        3th oct 2012
+                                                    </div>
+                                                </time>
                                             </div>
-                                        </time>
-                                    </div>
-                                </div>
-                            </a>
-                            <a href="#" class="row card-post_small mb-3">
-                                <div class="col-2 col-md-3 col-lg-4 overflow-hidden card-photo">
-                                    <img src="images/blog/post1.jpg" alt="post-img" class="img-fluid">
-                                </div>
+                                        </div>
+                                    </a>
+                                    <a href="#" class=" row card-post_small mb-3">
+                                        <div class="col-2 col-md-3 col-lg-4 overflow-hidden card-photo">
+                                            <img src="images/blog/post1.jpg" alt="post-img" class="img-fluid">
+                                        </div>
 
-                                <div class="col-10 col-md-9 col-lg-8 d-flex flex-column justify-content-center">
-                                    <div>
-                                        <h6>Magna mollis ultricies</h6>
-                                        <time datetime="2012-10-3"
-                                              class=" font-primary d-block mt-n2">
+                                        <div class="col-10 col-md-9 col-lg-8 d-flex flex-column justify-content-center">
+                                            <div>
+                                                <h6>Magna mollis ultricies</h6>
+                                                <time datetime="2012-10-3"
+                                                      class=" font-primary d-block mt-n2">
 
-                                            <div class="small-size muted-color">
-                                                3th oct 2012
+                                                    <div class="small-size muted-color">
+                                                        3th oct 2012
+                                                    </div>
+                                                </time>
                                             </div>
-                                        </time>
-                                    </div>
-                                </div>
-                            </a>
-                            <a href="#" class="row card-post_small ">
-                                <div class="col-2 col-md-3 col-lg-4 overflow-hidden card-photo">
-                                    <img src="images/blog/post3.jpg" alt="post-img" class="img-fluid">
-                                </div>
+                                        </div>
+                                    </a>
+                                    <a href="#" class=" row card-post_small ">
+                                        <div class="col-2 col-md-3 col-lg-4 overflow-hidden card-photo">
+                                            <img src="images/blog/post3.jpg" alt="post-img" class="img-fluid">
+                                        </div>
 
-                                <div class="col-10 col-md-9 col-lg-8 d-flex flex-column justify-content-center">
-                                    <div>
-                                        <h6>Magna mollis ultricies</h6>
-                                        <time datetime="2012-10-3"
-                                              class=" font-primary d-block mt-n2">
+                                        <div class="col-10 col-md-9 col-lg-8 d-flex flex-column justify-content-center">
+                                            <div>
+                                                <h6>Magna mollis ultricies</h6>
+                                                <time datetime="2012-10-3"
+                                                      class=" font-primary d-block mt-n2">
 
-                                            <div class="small-size muted-color">
-                                                3th oct 2012
+                                                    <div class="small-size muted-color">
+                                                        3th oct 2012
+                                                    </div>
+                                                </time>
                                             </div>
-                                        </time>
-                                    </div>
+                                        </div>
+                                    </a>
+
                                 </div>
-                            </a>
+
+                                <div id="filter-post_popular" class="tab-pane fade">
+                                    <a href="#" class=" row card-post_small mb-3">
+                                        <div class="col-2 col-md-3 col-lg-4 overflow-hidden card-photo">
+                                            <img src="images/blog/post4.jpg" alt="post-img" class="img-fluid">
+                                        </div>
+
+                                        <div class="col-10 col-md-9 col-lg-8 d-flex flex-column justify-content-center">
+                                            <div>
+                                                <h6>Magna mollis ultricies</h6>
+                                                <time datetime="2012-10-3"
+                                                      class=" font-primary d-block mt-n2">
+
+                                                    <div class="small-size muted-color">
+                                                        3th oct 2012
+                                                    </div>
+                                                </time>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="#" class=" row card-post_small ">
+                                        <div class="col-2 col-md-3 col-lg-4 overflow-hidden card-photo">
+                                            <img src="images/blog/post2.jpg" alt="post-img" class="img-fluid">
+                                        </div>
+
+                                        <div class="col-10 col-md-9 col-lg-8 d-flex flex-column justify-content-center">
+                                            <div>
+                                                <h6>Magna mollis ultricies</h6>
+                                                <time datetime="2012-10-3"
+                                                      class=" font-primary d-block mt-n2">
+
+                                                    <div class="small-size muted-color">
+                                                        3th oct 2012
+                                                    </div>
+                                                </time>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div id="filter-post_comments" class="tab-pane fade">
+                                    <a href="#" class=" row card-post_small mb-3 ">
+                                        <div class="col-2 col-md-3 col-lg-4 overflow-hidden card-photo">
+                                            <img src="images/blog/post5.jpg" alt="post-img" class="img-fluid">
+                                        </div>
+
+                                        <div class="col-10 col-md-9 col-lg-8 d-flex flex-column justify-content-center">
+                                            <div>
+                                                <h6>Magna mollis ultricies</h6>
+                                                <time datetime="2012-10-3"
+                                                      class=" font-primary d-block mt-n2">
+
+                                                    <div class="small-size muted-color">
+                                                        3th oct 2012
+                                                    </div>
+                                                </time>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="#" class=" row card-post_small mb-3">
+                                        <div class="col-2 col-md-3 col-lg-4 overflow-hidden card-photo">
+                                            <img src="images/blog/post1.jpg" alt="post-img" class="img-fluid">
+                                        </div>
+
+                                        <div class="col-10 col-md-9 col-lg-8 d-flex flex-column justify-content-center">
+                                            <div>
+                                                <h6>Magna mollis ultricies</h6>
+                                                <time datetime="2012-10-3"
+                                                      class=" font-primary d-block mt-n2">
+
+                                                    <div class="small-size muted-color">
+                                                        3th oct 2012
+                                                    </div>
+                                                </time>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="#" class=" row card-post_small ">
+                                        <div class="col-2 col-md-3 col-lg-4 overflow-hidden card-photo">
+                                            <img src="images/blog/post3.jpg" alt="post-img" class="img-fluid">
+                                        </div>
+
+                                        <div class="col-10 col-md-9 col-lg-8 d-flex flex-column justify-content-center">
+                                            <div>
+                                                <h6>Magna mollis ultricies</h6>
+                                                <time datetime="2012-10-3"
+                                                      class=" font-primary d-block mt-n2">
+
+                                                    <div class="small-size muted-color">
+                                                        3th oct 2012
+                                                    </div>
+                                                </time>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+
+
+                            </div>
                         </div>
 
 
-                        <div class="filter-categories mb-5">
+                        <div class="filter-categories mb-5 fadeInUp wow" data-wow-delay=".5s">
                             <h6 class="mb-2">Categories</h6>
 
                             <ul class="filter-list list-unstyled d-flex  flex-column">
@@ -754,22 +868,30 @@
 
                         </div>
 
-                        <div class="filter-tags mb-5">
+                        <div class="filter-tags mb-5 fadeInUp wow" data-wow-delay=".5s">
                             <h6 class="mb-4">Tags</h6>
 
                             <ul class="filter-list list-unstyled d-flex flex-wrap">
-                                <li class="ml-2 mb-2"><a class="text-uppercase d-inline-block px-3 py-2" href="#">CSS</a></li>
-                                <li class="ml-2 mb-2"><a class="text-uppercase d-inline-block px-3 py-2" href="#">html5</a></li>
-                                <li class="ml-2 mb-2"><a class="is-active text-uppercase d-inline-block px-3 py-2" href="#">bootstrap</a></li>
-                                <li class="ml-2 mb-2"><a class="text-uppercase d-inline-block  px-3 py-2" href="#">jquery</a></li>
-                                <li class="ml-2 mb-2"><a class="text-uppercase d-inline-block px-3 py-2" href="#">CSS</a></li>
-                                <li class="ml-2 mb-2"><a class="text-uppercase d-inline-block px-3 py-2" href="#">html5</a></li>
-                                <li class="ml-2 mb-2"><a class="text-uppercase d-inline-block px-3 py-2" href="#">bootstrap</a></li>
-                                <li class="ml-2 mb-2"><a class="text-uppercase d-inline-block  px-3 py-2" href="#">jquery</a></li>
+                                <li class="ml-2 mb-2"><a class="text-uppercase d-inline-block px-3 py-2"
+                                                         href="#">CSS</a></li>
+                                <li class="ml-2 mb-2"><a class="text-uppercase d-inline-block px-3 py-2"
+                                                         href="#">html5</a></li>
+                                <li class="ml-2 mb-2"><a class="is-active text-uppercase d-inline-block px-3 py-2"
+                                                         href="#">bootstrap</a></li>
+                                <li class="ml-2 mb-2"><a class="text-uppercase d-inline-block  px-3 py-2" href="#">jquery</a>
+                                </li>
+                                <li class="ml-2 mb-2"><a class="text-uppercase d-inline-block px-3 py-2"
+                                                         href="#">CSS</a></li>
+                                <li class="ml-2 mb-2"><a class="text-uppercase d-inline-block px-3 py-2"
+                                                         href="#">html5</a></li>
+                                <li class="ml-2 mb-2"><a class="text-uppercase d-inline-block px-3 py-2" href="#">bootstrap</a>
+                                </li>
+                                <li class="ml-2 mb-2"><a class="text-uppercase d-inline-block  px-3 py-2" href="#">jquery</a>
+                                </li>
                             </ul>
                         </div>
 
-                        <div class="filter-archives mb-5">
+                        <div class="filter-archives mb-5 fadeInUp wow" data-wow-delay=".5s">
                             <h6 class="mb-2">Archives</h6>
 
                             <ul class="filter-list list-unstyled d-flex  flex-column">
@@ -808,7 +930,6 @@
                 </div>
             </div>
         </section>
-
         <!--END BLOG-->
 
 
@@ -834,9 +955,12 @@
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
                                 incididunt ut labore et dolore magna aliqua.</p>
                             <div class="input-group mb-3">
-                                <input type="email" class="form-control rounded-0" id="email"
-                                       placeholder="YOUR EMAIL"
-                                       required>
+                                <div class="box-field">
+                                    <input type="text" class="form-control rounded-0" id="email"
+                                           placeholder="" name="email-contacts" required>
+                                    <label for="email">Your email</label>
+                                </div>
+
                                 <div class="input-group-append">
                                     <button class="btn btn-primary" type="submit">send</button>
                                 </div>
@@ -845,6 +969,7 @@
                     </div>
                 </div>
             </div>
+
         </section>
         <!--NEWSLETTER END-->
 

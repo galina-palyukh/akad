@@ -52,6 +52,10 @@
 
       .icon-ios-add {
         font-size: 50px;
+        transform: scale(0.6);
+        -webkit-transition: all .4s ease-in .3s;
+        transition: all .4s ease-in .3s;
+
       }
     }
 
@@ -59,6 +63,11 @@
       .overlay {
         opacity: 1;
         transform: scale(1);
+
+        .icon-ios-add {
+          opacity: 1;
+          transform: scale(1);
+        }
       }
     }
   }

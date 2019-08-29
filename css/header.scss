@@ -18,6 +18,7 @@
     font-size: 18px;
     font-weight: 600;
     color: $default-color;
+    font-family: $default-primary-font-family;
   }
 
 }
@@ -159,6 +160,7 @@
         font-size: 16px;
         display: block;
         color: $default-color;
+        font-family: $default-primary-font-family;
 
         &:hover {
           background-color: $default-color;

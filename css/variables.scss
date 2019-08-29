@@ -22,6 +22,11 @@ $default-muted-color: #9a9a9a;
 $default-light-color: #fff;
 
 
+$default-success-color: #28a745;
+$default-warning-color: #ffc107;
+$default-danger-color: #dc3545;
+
+
 $default-link-color: $default-color;
 $default-link-hover-color: $default-primary-color;
 
@@ -42,5 +47,5 @@ $base-h6-font-size: 14px;
 $base-h6-line-height: 1.2;
 
 
-$base-border-color: rgba(0, 0, 0, .1);
+$base-border-color: #e5e5e5;
 $base-border-width: 1px;
